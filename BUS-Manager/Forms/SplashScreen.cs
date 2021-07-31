@@ -83,8 +83,41 @@ namespace BUS_Manager
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="ev"></param>
-        private void SplashScreen_Load(object sender, EventArgs ev)
-        { ProgressBar.Value = 0; Indicator_LoadingIndicator.Visible = true; }
+        void SplashScreen_Load(object sender, EventArgs ev)
+        {
+            ProgressBar.Value = 0;
+            Indicator_LoadingIndicator.Visible = true;
+
+            ///<Sumary> Esta función dice lo siguiente:
+            ///Si en las configuraciones está guardada como
+            ///"true" la variable la cual se encarga de administrar
+            ///el uso o no de la animación, pues que active la casilla
+            ///que hay en el formulario y use la animación.
+            ///En caso contrario, baraja duríiiisimo.
+            ///</Sumary>
+            if (Properties.Settings.Default.UseAnimAgain_Value)
+            { _UseAnims = true; UseAnimAgain_Bool.Checked = true;  }
+            else
+            { _UseAnims = false; UseAnimAgain_Bool.Checked = false; }
+
+        }
+
+        /// <summary>
+        /// En esta función se está guardando la variable que se encarga de
+        /// usar o no la animación de inicio, para así poder saltarla sin tener
+        /// que acceder al código.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="ev"></param>
+        void SaveThisFormAnim(object sender, EventArgs ev)
+        {
+            if (UseAnimAgain_Bool.Checked)
+                Properties.Settings.Default.UseAnimAgain_Value = true;
+            else
+                Properties.Settings.Default.UseAnimAgain_Value = false;
+
+            Properties.Settings.Default.Save();
+        }
 
         #endregion
     }

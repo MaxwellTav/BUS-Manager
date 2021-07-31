@@ -38,6 +38,8 @@ namespace BUS_Manager
             this.Form_Drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.BarAnimation = new System.Windows.Forms.Timer(this.components);
             this.Form_Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.UseAnimAgain_Bool = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.UseAnimAgain_Label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // FadeIn_Timer
@@ -124,16 +126,57 @@ namespace BUS_Manager
             this.Form_Elipse.BorderRadius = 20;
             this.Form_Elipse.TargetControl = this;
             // 
+            // UseAnimAgain_Bool
+            // 
+            this.UseAnimAgain_Bool.Animated = true;
+            this.UseAnimAgain_Bool.Checked = true;
+            this.UseAnimAgain_Bool.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.UseAnimAgain_Bool.CheckedState.BorderRadius = 2;
+            this.UseAnimAgain_Bool.CheckedState.BorderThickness = 0;
+            this.UseAnimAgain_Bool.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.UseAnimAgain_Bool.CheckedState.Parent = this.UseAnimAgain_Bool;
+            this.UseAnimAgain_Bool.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.UseAnimAgain_Bool.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UseAnimAgain_Bool.Location = new System.Drawing.Point(5, 428);
+            this.UseAnimAgain_Bool.Name = "UseAnimAgain_Bool";
+            this.UseAnimAgain_Bool.ShadowDecoration.Parent = this.UseAnimAgain_Bool;
+            this.UseAnimAgain_Bool.Size = new System.Drawing.Size(20, 20);
+            this.UseAnimAgain_Bool.TabIndex = 4;
+            this.UseAnimAgain_Bool.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.UseAnimAgain_Bool.UncheckedState.BorderRadius = 2;
+            this.UseAnimAgain_Bool.UncheckedState.BorderThickness = 0;
+            this.UseAnimAgain_Bool.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.UseAnimAgain_Bool.UncheckedState.Parent = this.UseAnimAgain_Bool;
+            this.UseAnimAgain_Bool.CheckedChanged += new System.EventHandler(this.SaveThisFormAnim);
+            // 
+            // UseAnimAgain_Label
+            // 
+            this.UseAnimAgain_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.UseAnimAgain_Label.AutoSize = true;
+            this.UseAnimAgain_Label.BackColor = System.Drawing.Color.Transparent;
+            this.UseAnimAgain_Label.Enabled = false;
+            this.UseAnimAgain_Label.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UseAnimAgain_Label.Location = new System.Drawing.Point(25, 429);
+            this.UseAnimAgain_Label.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.UseAnimAgain_Label.Name = "UseAnimAgain_Label";
+            this.UseAnimAgain_Label.Size = new System.Drawing.Size(431, 17);
+            this.UseAnimAgain_Label.TabIndex = 5;
+            this.UseAnimAgain_Label.Text = "Usar la animación de entrada (una vez desactivada no podrá activarla).";
+            this.UseAnimAgain_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // SplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 34F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(48)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(897, 468);
+            this.Controls.Add(this.UseAnimAgain_Bool);
+            this.Controls.Add(this.UseAnimAgain_Label);
             this.Controls.Add(this.Indicator_LoadingIndicator);
             this.Controls.Add(this.ProgressBar);
             this.Controls.Add(this.Title1_Label);
             this.Controls.Add(this.Title2_Label);
+            this.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.Font = new System.Drawing.Font("Ubuntu", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(229)))), ((int)(((byte)(234)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -158,6 +201,8 @@ namespace BUS_Manager
         private Guna.UI2.WinForms.Guna2DragControl Form_Drag;
         private System.Windows.Forms.Timer BarAnimation;
         private Guna.UI2.WinForms.Guna2Elipse Form_Elipse;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox UseAnimAgain_Bool;
+        private System.Windows.Forms.Label UseAnimAgain_Label;
     }
 }
 
