@@ -14,7 +14,7 @@ namespace BUS_Manager
         #region Variables
 
         Random RNG = new Random();  //Variable la cual la reutilizo para el azar del programa.
-        bool _UseAnims = false;     //En caso de no querer usar una animación, apague esta variable (Marcar como "false" en donde dice "true")
+        bool _UseAnims = true;     //En caso de no querer usar una animación, apague esta variable (Marcar como "false" en donde dice "true")
 
         #endregion
 

@@ -1,7 +1,7 @@
 ﻿
-namespace Datos
+namespace Negocios
 {
-    partial class Form1
+    partial class BussinessForm
     {
         /// <summary>
         /// Variable del diseñador necesaria.

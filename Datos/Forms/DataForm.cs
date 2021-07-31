@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Datos
 {
-    public partial class Form1 : Form
+    public partial class DataForm : Form
     {
-        public Form1()
+        public DataForm()
         {
             InitializeComponent();
         }
