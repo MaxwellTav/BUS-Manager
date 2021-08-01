@@ -89,8 +89,8 @@ namespace BUS_Manager
             this.ProgressBar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.ProgressBar.Location = new System.Drawing.Point(0, 453);
             this.ProgressBar.Name = "ProgressBar";
-            this.ProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(220)))), ((int)(((byte)(229)))));
-            this.ProgressBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(220)))), ((int)(((byte)(229)))));
+            this.ProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(118)))), ((int)(((byte)(213)))));
+            this.ProgressBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(27)))), ((int)(((byte)(232)))));
             this.ProgressBar.ShadowDecoration.Parent = this.ProgressBar;
             this.ProgressBar.ShowPercentage = true;
             this.ProgressBar.Size = new System.Drawing.Size(897, 15);
