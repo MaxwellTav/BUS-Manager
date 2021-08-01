@@ -42,15 +42,15 @@ namespace BUS_Manager.Forms
             this.Password_Textbox = new System.Windows.Forms.TextBox();
             this.Pass_Label = new System.Windows.Forms.Label();
             this.Pass_Separator = new Guna.UI2.WinForms.Guna2Separator();
-            this.SeePass_Button = new System.Windows.Forms.PictureBox();
-            this.Pass_Picture = new System.Windows.Forms.PictureBox();
-            this.User_Picture = new System.Windows.Forms.PictureBox();
-            this.Background_Picture = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.ForgotPass_Button = new System.Windows.Forms.Label();
             this.Login_Button = new Guna.UI2.WinForms.Guna2GradientButton();
             this.NewAccount_Button = new System.Windows.Forms.Label();
             this.Loading_Indicator = new Guna.UI2.WinForms.Guna2ProgressIndicator();
+            this.SeePass_Button = new System.Windows.Forms.PictureBox();
+            this.Pass_Picture = new System.Windows.Forms.PictureBox();
+            this.User_Picture = new System.Windows.Forms.PictureBox();
+            this.Background_Picture = new System.Windows.Forms.PictureBox();
             this.Login_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SeePass_Button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pass_Picture)).BeginInit();
@@ -209,48 +209,6 @@ namespace BUS_Manager.Forms
             this.Pass_Separator.Size = new System.Drawing.Size(266, 10);
             this.Pass_Separator.TabIndex = 5;
             // 
-            // SeePass_Button
-            // 
-            this.SeePass_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SeePass_Button.Image = global::BUS_Manager.Properties.Resources.eye;
-            this.SeePass_Button.Location = new System.Drawing.Point(245, 198);
-            this.SeePass_Button.Name = "SeePass_Button";
-            this.SeePass_Button.Size = new System.Drawing.Size(25, 25);
-            this.SeePass_Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.SeePass_Button.TabIndex = 9;
-            this.SeePass_Button.TabStop = false;
-            // 
-            // Pass_Picture
-            // 
-            this.Pass_Picture.Image = global::BUS_Manager.Properties.Resources.LockedIcon;
-            this.Pass_Picture.Location = new System.Drawing.Point(9, 199);
-            this.Pass_Picture.Name = "Pass_Picture";
-            this.Pass_Picture.Size = new System.Drawing.Size(25, 25);
-            this.Pass_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pass_Picture.TabIndex = 8;
-            this.Pass_Picture.TabStop = false;
-            // 
-            // User_Picture
-            // 
-            this.User_Picture.Image = global::BUS_Manager.Properties.Resources.UserIcon;
-            this.User_Picture.Location = new System.Drawing.Point(9, 110);
-            this.User_Picture.Name = "User_Picture";
-            this.User_Picture.Size = new System.Drawing.Size(25, 25);
-            this.User_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.User_Picture.TabIndex = 4;
-            this.User_Picture.TabStop = false;
-            // 
-            // Background_Picture
-            // 
-            this.Background_Picture.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Background_Picture.Image = global::BUS_Manager.Properties.Resources.Template;
-            this.Background_Picture.Location = new System.Drawing.Point(0, 0);
-            this.Background_Picture.Name = "Background_Picture";
-            this.Background_Picture.Size = new System.Drawing.Size(831, 541);
-            this.Background_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Background_Picture.TabIndex = 0;
-            this.Background_Picture.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -318,6 +276,48 @@ namespace BUS_Manager.Forms
             this.Loading_Indicator.TabIndex = 5;
             this.Loading_Indicator.UseTransparentBackground = true;
             // 
+            // SeePass_Button
+            // 
+            this.SeePass_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SeePass_Button.Image = global::BUS_Manager.Properties.Resources.eye;
+            this.SeePass_Button.Location = new System.Drawing.Point(245, 198);
+            this.SeePass_Button.Name = "SeePass_Button";
+            this.SeePass_Button.Size = new System.Drawing.Size(25, 25);
+            this.SeePass_Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SeePass_Button.TabIndex = 9;
+            this.SeePass_Button.TabStop = false;
+            // 
+            // Pass_Picture
+            // 
+            this.Pass_Picture.Image = global::BUS_Manager.Properties.Resources.LockedIcon;
+            this.Pass_Picture.Location = new System.Drawing.Point(9, 199);
+            this.Pass_Picture.Name = "Pass_Picture";
+            this.Pass_Picture.Size = new System.Drawing.Size(25, 25);
+            this.Pass_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pass_Picture.TabIndex = 8;
+            this.Pass_Picture.TabStop = false;
+            // 
+            // User_Picture
+            // 
+            this.User_Picture.Image = global::BUS_Manager.Properties.Resources.UserIcon;
+            this.User_Picture.Location = new System.Drawing.Point(9, 110);
+            this.User_Picture.Name = "User_Picture";
+            this.User_Picture.Size = new System.Drawing.Size(25, 25);
+            this.User_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.User_Picture.TabIndex = 4;
+            this.User_Picture.TabStop = false;
+            // 
+            // Background_Picture
+            // 
+            this.Background_Picture.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Background_Picture.Image = global::BUS_Manager.Properties.Resources.Template;
+            this.Background_Picture.Location = new System.Drawing.Point(0, 0);
+            this.Background_Picture.Name = "Background_Picture";
+            this.Background_Picture.Size = new System.Drawing.Size(831, 541);
+            this.Background_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Background_Picture.TabIndex = 0;
+            this.Background_Picture.TabStop = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -333,7 +333,9 @@ namespace BUS_Manager.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
+            this.Shown += new System.EventHandler(this.Login_Load);
             this.Login_Panel.ResumeLayout(false);
             this.Login_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SeePass_Button)).EndInit();
