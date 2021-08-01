@@ -164,7 +164,7 @@ namespace BUS_Manager.Forms
             this.User_Textbox.Location = new System.Drawing.Point(34, 104);
             this.User_Textbox.Name = "User_Textbox";
             this.User_Textbox.Size = new System.Drawing.Size(236, 28);
-            this.User_Textbox.TabIndex = 2;
+            this.User_Textbox.TabIndex = 1;
             this.User_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // User_Label
@@ -187,7 +187,7 @@ namespace BUS_Manager.Forms
             this.Password_Textbox.Location = new System.Drawing.Point(40, 193);
             this.Password_Textbox.Name = "Password_Textbox";
             this.Password_Textbox.Size = new System.Drawing.Size(199, 28);
-            this.Password_Textbox.TabIndex = 6;
+            this.Password_Textbox.TabIndex = 1;
             this.Password_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Password_Textbox.UseSystemPasswordChar = true;
             // 
@@ -278,17 +278,17 @@ namespace BUS_Manager.Forms
             // 
             this.Login_Button.Animated = true;
             this.Login_Button.AutoRoundedCorners = true;
-            this.Login_Button.BorderRadius = 17;
+            this.Login_Button.BorderRadius = 21;
             this.Login_Button.CheckedState.Parent = this.Login_Button;
             this.Login_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Login_Button.CustomImages.Parent = this.Login_Button;
             this.Login_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Login_Button.ForeColor = System.Drawing.Color.White;
             this.Login_Button.HoverState.Parent = this.Login_Button;
-            this.Login_Button.Location = new System.Drawing.Point(4, 274);
+            this.Login_Button.Location = new System.Drawing.Point(4, 288);
             this.Login_Button.Name = "Login_Button";
             this.Login_Button.ShadowDecoration.Parent = this.Login_Button;
-            this.Login_Button.Size = new System.Drawing.Size(266, 37);
+            this.Login_Button.Size = new System.Drawing.Size(266, 45);
             this.Login_Button.TabIndex = 12;
             this.Login_Button.Text = "LOGIN";
             // 
@@ -298,7 +298,7 @@ namespace BUS_Manager.Forms
             this.NewAccount_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NewAccount_Button.Font = new System.Drawing.Font("Ubuntu Light", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewAccount_Button.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.NewAccount_Button.Location = new System.Drawing.Point(75, 337);
+            this.NewAccount_Button.Location = new System.Drawing.Point(75, 369);
             this.NewAccount_Button.Name = "NewAccount_Button";
             this.NewAccount_Button.Size = new System.Drawing.Size(122, 32);
             this.NewAccount_Button.TabIndex = 13;
