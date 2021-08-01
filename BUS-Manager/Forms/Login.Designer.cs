@@ -32,28 +32,29 @@ namespace BUS_Manager.Forms
             this.components = new System.ComponentModel.Container();
             this.Exit_Button = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Form_Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.Minimize_Button = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.RezizeButton = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.Form_Drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.Login_Panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.User_Separator = new Guna.UI2.WinForms.Guna2Separator();
             this.User_Textbox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.User_Label = new System.Windows.Forms.Label();
             this.Password_Textbox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
+            this.Pass_Label = new System.Windows.Forms.Label();
+            this.Pass_Separator = new Guna.UI2.WinForms.Guna2Separator();
             this.SeePass_Button = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Pass_Picture = new System.Windows.Forms.PictureBox();
+            this.User_Picture = new System.Windows.Forms.PictureBox();
             this.Background_Picture = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2Panel1.SuspendLayout();
+            this.ForgotPass_Button = new System.Windows.Forms.Label();
+            this.Login_Button = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.NewAccount_Button = new System.Windows.Forms.Label();
+            this.Loading_Indicator = new Guna.UI2.WinForms.Guna2ProgressIndicator();
+            this.Login_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SeePass_Button)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pass_Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.User_Picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Background_Picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,79 +81,79 @@ namespace BUS_Manager.Forms
             this.Form_Elipse.BorderRadius = 15;
             this.Form_Elipse.TargetControl = this;
             // 
-            // guna2CircleButton1
+            // Minimize_Button
             // 
-            this.guna2CircleButton1.Animated = true;
-            this.guna2CircleButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.Silver;
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(787, 4);
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(18, 18);
-            this.guna2CircleButton1.TabIndex = 2;
-            this.guna2CircleButton1.UseTransparentBackground = true;
+            this.Minimize_Button.Animated = true;
+            this.Minimize_Button.BackColor = System.Drawing.Color.Transparent;
+            this.Minimize_Button.CheckedState.Parent = this.Minimize_Button;
+            this.Minimize_Button.CustomImages.Parent = this.Minimize_Button;
+            this.Minimize_Button.FillColor = System.Drawing.Color.Silver;
+            this.Minimize_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Minimize_Button.ForeColor = System.Drawing.Color.White;
+            this.Minimize_Button.HoverState.Parent = this.Minimize_Button;
+            this.Minimize_Button.Location = new System.Drawing.Point(787, 4);
+            this.Minimize_Button.Name = "Minimize_Button";
+            this.Minimize_Button.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Minimize_Button.ShadowDecoration.Parent = this.Minimize_Button;
+            this.Minimize_Button.Size = new System.Drawing.Size(18, 18);
+            this.Minimize_Button.TabIndex = 2;
+            this.Minimize_Button.UseTransparentBackground = true;
             // 
-            // guna2ToggleSwitch1
+            // RezizeButton
             // 
-            this.guna2ToggleSwitch1.Animated = true;
-            this.guna2ToggleSwitch1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.CheckedState.Parent = this.guna2ToggleSwitch1;
-            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(749, 3);
-            this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
-            this.guna2ToggleSwitch1.ShadowDecoration.Parent = this.guna2ToggleSwitch1;
-            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(35, 20);
-            this.guna2ToggleSwitch1.TabIndex = 3;
-            this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.UncheckedState.Parent = this.guna2ToggleSwitch1;
-            this.guna2ToggleSwitch1.UseTransparentBackground = true;
+            this.RezizeButton.Animated = true;
+            this.RezizeButton.BackColor = System.Drawing.Color.Transparent;
+            this.RezizeButton.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RezizeButton.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RezizeButton.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.RezizeButton.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.RezizeButton.CheckedState.Parent = this.RezizeButton;
+            this.RezizeButton.Location = new System.Drawing.Point(749, 3);
+            this.RezizeButton.Name = "RezizeButton";
+            this.RezizeButton.ShadowDecoration.Parent = this.RezizeButton;
+            this.RezizeButton.Size = new System.Drawing.Size(35, 20);
+            this.RezizeButton.TabIndex = 3;
+            this.RezizeButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.RezizeButton.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.RezizeButton.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.RezizeButton.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.RezizeButton.UncheckedState.Parent = this.RezizeButton;
+            this.RezizeButton.UseTransparentBackground = true;
             // 
             // Form_Drag
             // 
             this.Form_Drag.TargetControl = this.Background_Picture;
             // 
-            // guna2Panel1
+            // Login_Panel
             // 
-            this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.Controls.Add(this.label5);
-            this.guna2Panel1.Controls.Add(this.guna2GradientButton1);
-            this.guna2Panel1.Controls.Add(this.label3);
-            this.guna2Panel1.Controls.Add(this.User_Textbox);
-            this.guna2Panel1.Controls.Add(this.Password_Textbox);
-            this.guna2Panel1.Controls.Add(this.SeePass_Button);
-            this.guna2Panel1.Controls.Add(this.pictureBox2);
-            this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Controls.Add(this.guna2Separator2);
-            this.guna2Panel1.Controls.Add(this.pictureBox1);
-            this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Controls.Add(this.guna2Separator1);
-            this.guna2Panel1.Controls.Add(this.label4);
-            this.guna2Panel1.Location = new System.Drawing.Point(279, 61);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(274, 420);
-            this.guna2Panel1.TabIndex = 4;
-            this.guna2Panel1.UseTransparentBackground = true;
+            this.Login_Panel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Login_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Login_Panel.Controls.Add(this.NewAccount_Button);
+            this.Login_Panel.Controls.Add(this.Login_Button);
+            this.Login_Panel.Controls.Add(this.label3);
+            this.Login_Panel.Controls.Add(this.User_Textbox);
+            this.Login_Panel.Controls.Add(this.Password_Textbox);
+            this.Login_Panel.Controls.Add(this.SeePass_Button);
+            this.Login_Panel.Controls.Add(this.Pass_Picture);
+            this.Login_Panel.Controls.Add(this.Pass_Label);
+            this.Login_Panel.Controls.Add(this.Pass_Separator);
+            this.Login_Panel.Controls.Add(this.User_Picture);
+            this.Login_Panel.Controls.Add(this.User_Label);
+            this.Login_Panel.Controls.Add(this.User_Separator);
+            this.Login_Panel.Controls.Add(this.ForgotPass_Button);
+            this.Login_Panel.Location = new System.Drawing.Point(279, 61);
+            this.Login_Panel.Name = "Login_Panel";
+            this.Login_Panel.ShadowDecoration.Parent = this.Login_Panel;
+            this.Login_Panel.Size = new System.Drawing.Size(274, 420);
+            this.Login_Panel.TabIndex = 4;
+            this.Login_Panel.UseTransparentBackground = true;
             // 
-            // guna2Separator1
+            // User_Separator
             // 
-            this.guna2Separator1.Location = new System.Drawing.Point(4, 135);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(266, 10);
-            this.guna2Separator1.TabIndex = 1;
+            this.User_Separator.Location = new System.Drawing.Point(4, 135);
+            this.User_Separator.Name = "User_Separator";
+            this.User_Separator.Size = new System.Drawing.Size(266, 10);
+            this.User_Separator.TabIndex = 1;
             // 
             // User_Textbox
             // 
@@ -166,16 +167,16 @@ namespace BUS_Manager.Forms
             this.User_Textbox.TabIndex = 2;
             this.User_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label1
+            // User_Label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(4, 89);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "usuario";
+            this.User_Label.AutoSize = true;
+            this.User_Label.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.User_Label.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.User_Label.Location = new System.Drawing.Point(4, 89);
+            this.User_Label.Name = "User_Label";
+            this.User_Label.Size = new System.Drawing.Size(52, 19);
+            this.User_Label.TabIndex = 3;
+            this.User_Label.Text = "usuario";
             // 
             // Password_Textbox
             // 
@@ -190,23 +191,23 @@ namespace BUS_Manager.Forms
             this.Password_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Password_Textbox.UseSystemPasswordChar = true;
             // 
-            // label2
+            // Pass_Label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(4, 178);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 19);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "contraseña";
+            this.Pass_Label.AutoSize = true;
+            this.Pass_Label.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pass_Label.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Pass_Label.Location = new System.Drawing.Point(4, 178);
+            this.Pass_Label.Name = "Pass_Label";
+            this.Pass_Label.Size = new System.Drawing.Size(74, 19);
+            this.Pass_Label.TabIndex = 7;
+            this.Pass_Label.Text = "contraseña";
             // 
-            // guna2Separator2
+            // Pass_Separator
             // 
-            this.guna2Separator2.Location = new System.Drawing.Point(4, 223);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(266, 10);
-            this.guna2Separator2.TabIndex = 5;
+            this.Pass_Separator.Location = new System.Drawing.Point(4, 223);
+            this.Pass_Separator.Name = "Pass_Separator";
+            this.Pass_Separator.Size = new System.Drawing.Size(266, 10);
+            this.Pass_Separator.TabIndex = 5;
             // 
             // SeePass_Button
             // 
@@ -219,25 +220,25 @@ namespace BUS_Manager.Forms
             this.SeePass_Button.TabIndex = 9;
             this.SeePass_Button.TabStop = false;
             // 
-            // pictureBox2
+            // Pass_Picture
             // 
-            this.pictureBox2.Image = global::BUS_Manager.Properties.Resources.LockedIcon;
-            this.pictureBox2.Location = new System.Drawing.Point(9, 199);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
+            this.Pass_Picture.Image = global::BUS_Manager.Properties.Resources.LockedIcon;
+            this.Pass_Picture.Location = new System.Drawing.Point(9, 199);
+            this.Pass_Picture.Name = "Pass_Picture";
+            this.Pass_Picture.Size = new System.Drawing.Size(25, 25);
+            this.Pass_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pass_Picture.TabIndex = 8;
+            this.Pass_Picture.TabStop = false;
             // 
-            // pictureBox1
+            // User_Picture
             // 
-            this.pictureBox1.Image = global::BUS_Manager.Properties.Resources.UserIcon;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 110);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.User_Picture.Image = global::BUS_Manager.Properties.Resources.UserIcon;
+            this.User_Picture.Location = new System.Drawing.Point(9, 110);
+            this.User_Picture.Name = "User_Picture";
+            this.User_Picture.Size = new System.Drawing.Size(25, 25);
+            this.User_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.User_Picture.TabIndex = 4;
+            this.User_Picture.TabStop = false;
             // 
             // Background_Picture
             // 
@@ -261,69 +262,83 @@ namespace BUS_Manager.Forms
             this.label3.TabIndex = 10;
             this.label3.Text = "LOGIN";
             // 
-            // label4
+            // ForgotPass_Button
             // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Ubuntu Light", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(122, 230);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(152, 16);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "¡Se me olvidó la contraseña!";
+            this.ForgotPass_Button.AutoSize = true;
+            this.ForgotPass_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ForgotPass_Button.Font = new System.Drawing.Font("Ubuntu Light", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForgotPass_Button.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ForgotPass_Button.Location = new System.Drawing.Point(122, 230);
+            this.ForgotPass_Button.Name = "ForgotPass_Button";
+            this.ForgotPass_Button.Size = new System.Drawing.Size(152, 16);
+            this.ForgotPass_Button.TabIndex = 11;
+            this.ForgotPass_Button.Text = "¡Se me olvidó la contraseña!";
             // 
-            // guna2GradientButton1
+            // Login_Button
             // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.AutoRoundedCorners = true;
-            this.guna2GradientButton1.BorderRadius = 17;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(4, 274);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(266, 37);
-            this.guna2GradientButton1.TabIndex = 12;
-            this.guna2GradientButton1.Text = "LOGIN";
+            this.Login_Button.Animated = true;
+            this.Login_Button.AutoRoundedCorners = true;
+            this.Login_Button.BorderRadius = 17;
+            this.Login_Button.CheckedState.Parent = this.Login_Button;
+            this.Login_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Login_Button.CustomImages.Parent = this.Login_Button;
+            this.Login_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Login_Button.ForeColor = System.Drawing.Color.White;
+            this.Login_Button.HoverState.Parent = this.Login_Button;
+            this.Login_Button.Location = new System.Drawing.Point(4, 274);
+            this.Login_Button.Name = "Login_Button";
+            this.Login_Button.ShadowDecoration.Parent = this.Login_Button;
+            this.Login_Button.Size = new System.Drawing.Size(266, 37);
+            this.Login_Button.TabIndex = 12;
+            this.Login_Button.Text = "LOGIN";
             // 
-            // label5
+            // NewAccount_Button
             // 
-            this.label5.AutoSize = true;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label5.Font = new System.Drawing.Font("Ubuntu Light", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(73, 337);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 32);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "¿No tienes un usuario?\r\n!Crea una cuenta aquí¡";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NewAccount_Button.AutoSize = true;
+            this.NewAccount_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NewAccount_Button.Font = new System.Drawing.Font("Ubuntu Light", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewAccount_Button.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.NewAccount_Button.Location = new System.Drawing.Point(75, 337);
+            this.NewAccount_Button.Name = "NewAccount_Button";
+            this.NewAccount_Button.Size = new System.Drawing.Size(122, 32);
+            this.NewAccount_Button.TabIndex = 13;
+            this.NewAccount_Button.Text = "¿No tienes un usuario?\r\n!Crea una cuenta aquí¡";
+            this.NewAccount_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Loading_Indicator
+            // 
+            this.Loading_Indicator.AnimationSpeed = 85;
+            this.Loading_Indicator.AutoStart = true;
+            this.Loading_Indicator.BackColor = System.Drawing.Color.Transparent;
+            this.Loading_Indicator.CircleSize = 1F;
+            this.Loading_Indicator.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.Loading_Indicator.Location = new System.Drawing.Point(369, 204);
+            this.Loading_Indicator.Name = "Loading_Indicator";
+            this.Loading_Indicator.Size = new System.Drawing.Size(90, 90);
+            this.Loading_Indicator.TabIndex = 5;
+            this.Loading_Indicator.UseTransparentBackground = true;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(831, 541);
-            this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.guna2ToggleSwitch1);
-            this.Controls.Add(this.guna2CircleButton1);
+            this.Controls.Add(this.Login_Panel);
+            this.Controls.Add(this.RezizeButton);
+            this.Controls.Add(this.Minimize_Button);
             this.Controls.Add(this.Exit_Button);
             this.Controls.Add(this.Background_Picture);
+            this.Controls.Add(this.Loading_Indicator);
             this.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.Text = "MainForm";
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
+            this.Login_Panel.ResumeLayout(false);
+            this.Login_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SeePass_Button)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pass_Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.User_Picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Background_Picture)).EndInit();
             this.ResumeLayout(false);
 
@@ -334,22 +349,23 @@ namespace BUS_Manager.Forms
         private System.Windows.Forms.PictureBox Background_Picture;
         private Guna.UI2.WinForms.Guna2CircleButton Exit_Button;
         private Guna.UI2.WinForms.Guna2Elipse Form_Elipse;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch RezizeButton;
+        private Guna.UI2.WinForms.Guna2CircleButton Minimize_Button;
         private Guna.UI2.WinForms.Guna2DragControl Form_Drag;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
+        private Guna.UI2.WinForms.Guna2Panel Login_Panel;
+        private Guna.UI2.WinForms.Guna2Separator User_Separator;
         private System.Windows.Forms.TextBox User_Textbox;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox User_Picture;
+        private System.Windows.Forms.Label User_Label;
         private System.Windows.Forms.TextBox Password_Textbox;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
+        private System.Windows.Forms.PictureBox Pass_Picture;
+        private System.Windows.Forms.Label Pass_Label;
+        private Guna.UI2.WinForms.Guna2Separator Pass_Separator;
         private System.Windows.Forms.PictureBox SeePass_Button;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private System.Windows.Forms.Label NewAccount_Button;
+        private Guna.UI2.WinForms.Guna2GradientButton Login_Button;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label ForgotPass_Button;
+        private Guna.UI2.WinForms.Guna2ProgressIndicator Loading_Indicator;
     }
 }
