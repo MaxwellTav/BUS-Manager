@@ -70,7 +70,7 @@ namespace BUS_Manager
             Indicator_LoadingIndicator.Visible = false;
             ProgressBar.Value = 100;
 
-            Forms.MainForm mainForm = new Forms.MainForm(); //Creando instancia del Formulario.
+            Forms.Login mainForm = new Forms.Login(); //Creando instancia del Formulario.
             mainForm.Show(); //Mostrando la instancia del Formulario ya creado.
             Visible = false; //ocultando el formulario actual
         }

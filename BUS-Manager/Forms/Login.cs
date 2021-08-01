@@ -3,10 +3,10 @@ using System.Windows.Forms;
 
 namespace BUS_Manager.Forms
 {
-    public partial class MainForm : Form
+    public partial class Login : Form
     {
         #region Useless
-        public MainForm() { InitializeComponent(); }
+        public Login() { InitializeComponent(); }
         #endregion
 
         #region Variables
@@ -14,11 +14,6 @@ namespace BUS_Manager.Forms
         MessageForm messageForm = new MessageForm();
 
         #endregion
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ShowMessage("Hola", "¿Como estás?");
-        }
 
         #region Eventos
         private void ShowMessage(string title, string body)
