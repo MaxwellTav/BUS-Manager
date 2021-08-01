@@ -40,6 +40,7 @@ namespace BUS_Manager
             this.Form_Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.UseAnimAgain_Bool = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.UseAnimAgain_Label = new System.Windows.Forms.Label();
+            this.LoadingTitle_Label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // FadeIn_Timer
@@ -106,7 +107,7 @@ namespace BUS_Manager
             this.Indicator_LoadingIndicator.BackColor = System.Drawing.Color.Transparent;
             this.Indicator_LoadingIndicator.CircleSize = 1F;
             this.Indicator_LoadingIndicator.Enabled = false;
-            this.Indicator_LoadingIndicator.Location = new System.Drawing.Point(843, 1);
+            this.Indicator_LoadingIndicator.Location = new System.Drawing.Point(827, 4);
             this.Indicator_LoadingIndicator.Name = "Indicator_LoadingIndicator";
             this.Indicator_LoadingIndicator.Size = new System.Drawing.Size(50, 50);
             this.Indicator_LoadingIndicator.TabIndex = 3;
@@ -164,12 +165,28 @@ namespace BUS_Manager
             this.UseAnimAgain_Label.Text = "Usar la animación de entrada (una vez desactivada no podrá activarla).";
             this.UseAnimAgain_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // LoadingTitle_Label
+            // 
+            this.LoadingTitle_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LoadingTitle_Label.AutoSize = true;
+            this.LoadingTitle_Label.BackColor = System.Drawing.Color.Transparent;
+            this.LoadingTitle_Label.Enabled = false;
+            this.LoadingTitle_Label.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoadingTitle_Label.Location = new System.Drawing.Point(818, 54);
+            this.LoadingTitle_Label.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.LoadingTitle_Label.Name = "LoadingTitle_Label";
+            this.LoadingTitle_Label.Size = new System.Drawing.Size(76, 17);
+            this.LoadingTitle_Label.TabIndex = 6;
+            this.LoadingTitle_Label.Text = "Cargando...";
+            this.LoadingTitle_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // SplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 34F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(48)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(897, 468);
+            this.Controls.Add(this.LoadingTitle_Label);
             this.Controls.Add(this.UseAnimAgain_Bool);
             this.Controls.Add(this.UseAnimAgain_Label);
             this.Controls.Add(this.Indicator_LoadingIndicator);
@@ -203,6 +220,7 @@ namespace BUS_Manager
         private Guna.UI2.WinForms.Guna2Elipse Form_Elipse;
         private Guna.UI2.WinForms.Guna2CustomCheckBox UseAnimAgain_Bool;
         private System.Windows.Forms.Label UseAnimAgain_Label;
+        private System.Windows.Forms.Label LoadingTitle_Label;
     }
 }
 
