@@ -49,7 +49,7 @@ namespace BUS_Manager.Forms
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void Login_Load(object sender, EventArgs e)
-        { ShowMessage("Saludos...", "Bienvenido, inicié sesión con sus credenciales para comenzar", 1); }
+        { ShowMessage("Saludos...", "Bienvenido, inicié sesión con sus credenciales para comenzar\n\nEste y las demás cajas de mensajes aparecerán en la posición del ratón (Mouse).", 1); }
 
         #endregion
     }
