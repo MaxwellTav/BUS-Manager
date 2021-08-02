@@ -33,29 +33,29 @@ namespace BUS_Manager.Forms
             this.Exit_Button = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Form_Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Minimize_Button = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.RezizeButton = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.Rezize_Button = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.Form_Drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.Background_Picture = new System.Windows.Forms.PictureBox();
             this.Login_Panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.User_Separator = new Guna.UI2.WinForms.Guna2Separator();
-            this.User_Textbox = new System.Windows.Forms.TextBox();
-            this.User_Label = new System.Windows.Forms.Label();
-            this.Password_Textbox = new System.Windows.Forms.TextBox();
-            this.Pass_Label = new System.Windows.Forms.Label();
-            this.Pass_Separator = new Guna.UI2.WinForms.Guna2Separator();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ForgotPass_Button = new System.Windows.Forms.Label();
-            this.Login_Button = new Guna.UI2.WinForms.Guna2GradientButton();
             this.NewAccount_Button = new System.Windows.Forms.Label();
-            this.Loading_Indicator = new Guna.UI2.WinForms.Guna2ProgressIndicator();
+            this.Login_Button = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.User_Textbox = new System.Windows.Forms.TextBox();
+            this.Password_Textbox = new System.Windows.Forms.TextBox();
             this.SeePass_Button = new System.Windows.Forms.PictureBox();
             this.Pass_Picture = new System.Windows.Forms.PictureBox();
+            this.Pass_Label = new System.Windows.Forms.Label();
+            this.Pass_Separator = new Guna.UI2.WinForms.Guna2Separator();
             this.User_Picture = new System.Windows.Forms.PictureBox();
-            this.Background_Picture = new System.Windows.Forms.PictureBox();
+            this.User_Label = new System.Windows.Forms.Label();
+            this.User_Separator = new Guna.UI2.WinForms.Guna2Separator();
+            this.ForgotPass_Button = new System.Windows.Forms.Label();
+            this.Loading_Indicator = new Guna.UI2.WinForms.Guna2ProgressIndicator();
+            ((System.ComponentModel.ISupportInitialize)(this.Background_Picture)).BeginInit();
             this.Login_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SeePass_Button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pass_Picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.User_Picture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Background_Picture)).BeginInit();
             this.SuspendLayout();
             // 
             // Exit_Button
@@ -75,6 +75,7 @@ namespace BUS_Manager.Forms
             this.Exit_Button.Size = new System.Drawing.Size(18, 18);
             this.Exit_Button.TabIndex = 1;
             this.Exit_Button.UseTransparentBackground = true;
+            this.Exit_Button.Click += new System.EventHandler(this.FormControl);
             // 
             // Form_Elipse
             // 
@@ -98,31 +99,44 @@ namespace BUS_Manager.Forms
             this.Minimize_Button.Size = new System.Drawing.Size(18, 18);
             this.Minimize_Button.TabIndex = 2;
             this.Minimize_Button.UseTransparentBackground = true;
+            this.Minimize_Button.Click += new System.EventHandler(this.FormControl);
             // 
-            // RezizeButton
+            // Rezize_Button
             // 
-            this.RezizeButton.Animated = true;
-            this.RezizeButton.BackColor = System.Drawing.Color.Transparent;
-            this.RezizeButton.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.RezizeButton.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.RezizeButton.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.RezizeButton.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.RezizeButton.CheckedState.Parent = this.RezizeButton;
-            this.RezizeButton.Location = new System.Drawing.Point(749, 3);
-            this.RezizeButton.Name = "RezizeButton";
-            this.RezizeButton.ShadowDecoration.Parent = this.RezizeButton;
-            this.RezizeButton.Size = new System.Drawing.Size(35, 20);
-            this.RezizeButton.TabIndex = 3;
-            this.RezizeButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.RezizeButton.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.RezizeButton.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.RezizeButton.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.RezizeButton.UncheckedState.Parent = this.RezizeButton;
-            this.RezizeButton.UseTransparentBackground = true;
+            this.Rezize_Button.Animated = true;
+            this.Rezize_Button.BackColor = System.Drawing.Color.Transparent;
+            this.Rezize_Button.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Rezize_Button.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Rezize_Button.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.Rezize_Button.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.Rezize_Button.CheckedState.Parent = this.Rezize_Button;
+            this.Rezize_Button.Location = new System.Drawing.Point(749, 3);
+            this.Rezize_Button.Name = "Rezize_Button";
+            this.Rezize_Button.ShadowDecoration.Parent = this.Rezize_Button;
+            this.Rezize_Button.Size = new System.Drawing.Size(35, 20);
+            this.Rezize_Button.TabIndex = 3;
+            this.Rezize_Button.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.Rezize_Button.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.Rezize_Button.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.Rezize_Button.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.Rezize_Button.UncheckedState.Parent = this.Rezize_Button;
+            this.Rezize_Button.UseTransparentBackground = true;
+            this.Rezize_Button.Click += new System.EventHandler(this.FormControl);
             // 
             // Form_Drag
             // 
             this.Form_Drag.TargetControl = this.Background_Picture;
+            // 
+            // Background_Picture
+            // 
+            this.Background_Picture.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Background_Picture.Image = global::BUS_Manager.Properties.Resources.Template;
+            this.Background_Picture.Location = new System.Drawing.Point(0, 0);
+            this.Background_Picture.Name = "Background_Picture";
+            this.Background_Picture.Size = new System.Drawing.Size(831, 541);
+            this.Background_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Background_Picture.TabIndex = 0;
+            this.Background_Picture.TabStop = false;
             // 
             // Login_Panel
             // 
@@ -148,89 +162,18 @@ namespace BUS_Manager.Forms
             this.Login_Panel.TabIndex = 4;
             this.Login_Panel.UseTransparentBackground = true;
             // 
-            // User_Separator
+            // NewAccount_Button
             // 
-            this.User_Separator.Location = new System.Drawing.Point(4, 135);
-            this.User_Separator.Name = "User_Separator";
-            this.User_Separator.Size = new System.Drawing.Size(266, 10);
-            this.User_Separator.TabIndex = 1;
-            // 
-            // User_Textbox
-            // 
-            this.User_Textbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.User_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.User_Textbox.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.User_Textbox.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.User_Textbox.Location = new System.Drawing.Point(34, 104);
-            this.User_Textbox.Name = "User_Textbox";
-            this.User_Textbox.Size = new System.Drawing.Size(236, 28);
-            this.User_Textbox.TabIndex = 1;
-            this.User_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // User_Label
-            // 
-            this.User_Label.AutoSize = true;
-            this.User_Label.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.User_Label.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.User_Label.Location = new System.Drawing.Point(4, 89);
-            this.User_Label.Name = "User_Label";
-            this.User_Label.Size = new System.Drawing.Size(52, 19);
-            this.User_Label.TabIndex = 3;
-            this.User_Label.Text = "usuario";
-            // 
-            // Password_Textbox
-            // 
-            this.Password_Textbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Password_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Password_Textbox.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password_Textbox.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Password_Textbox.Location = new System.Drawing.Point(40, 193);
-            this.Password_Textbox.Name = "Password_Textbox";
-            this.Password_Textbox.Size = new System.Drawing.Size(199, 28);
-            this.Password_Textbox.TabIndex = 1;
-            this.Password_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Password_Textbox.UseSystemPasswordChar = true;
-            // 
-            // Pass_Label
-            // 
-            this.Pass_Label.AutoSize = true;
-            this.Pass_Label.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pass_Label.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Pass_Label.Location = new System.Drawing.Point(4, 178);
-            this.Pass_Label.Name = "Pass_Label";
-            this.Pass_Label.Size = new System.Drawing.Size(74, 19);
-            this.Pass_Label.TabIndex = 7;
-            this.Pass_Label.Text = "contraseña";
-            // 
-            // Pass_Separator
-            // 
-            this.Pass_Separator.Location = new System.Drawing.Point(4, 223);
-            this.Pass_Separator.Name = "Pass_Separator";
-            this.Pass_Separator.Size = new System.Drawing.Size(266, 10);
-            this.Pass_Separator.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(94, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 31);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "LOGIN";
-            // 
-            // ForgotPass_Button
-            // 
-            this.ForgotPass_Button.AutoSize = true;
-            this.ForgotPass_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ForgotPass_Button.Font = new System.Drawing.Font("Ubuntu Light", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForgotPass_Button.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ForgotPass_Button.Location = new System.Drawing.Point(122, 230);
-            this.ForgotPass_Button.Name = "ForgotPass_Button";
-            this.ForgotPass_Button.Size = new System.Drawing.Size(152, 16);
-            this.ForgotPass_Button.TabIndex = 11;
-            this.ForgotPass_Button.Text = "¡Se me olvidó la contraseña!";
+            this.NewAccount_Button.AutoSize = true;
+            this.NewAccount_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NewAccount_Button.Font = new System.Drawing.Font("Ubuntu Light", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewAccount_Button.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.NewAccount_Button.Location = new System.Drawing.Point(76, 369);
+            this.NewAccount_Button.Name = "NewAccount_Button";
+            this.NewAccount_Button.Size = new System.Drawing.Size(122, 32);
+            this.NewAccount_Button.TabIndex = 13;
+            this.NewAccount_Button.Text = "¿No tienes un usuario?\r\n!Crea una cuenta aquí¡";
+            this.NewAccount_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Login_Button
             // 
@@ -248,33 +191,44 @@ namespace BUS_Manager.Forms
             this.Login_Button.ShadowDecoration.Parent = this.Login_Button;
             this.Login_Button.Size = new System.Drawing.Size(266, 45);
             this.Login_Button.TabIndex = 12;
-            this.Login_Button.Text = "LOGIN";
+            this.Login_Button.Text = "Iniciar Sesión";
+            this.Login_Button.Click += new System.EventHandler(this.LoginEvent);
             // 
-            // NewAccount_Button
+            // label3
             // 
-            this.NewAccount_Button.AutoSize = true;
-            this.NewAccount_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.NewAccount_Button.Font = new System.Drawing.Font("Ubuntu Light", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewAccount_Button.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.NewAccount_Button.Location = new System.Drawing.Point(75, 369);
-            this.NewAccount_Button.Name = "NewAccount_Button";
-            this.NewAccount_Button.Size = new System.Drawing.Size(122, 32);
-            this.NewAccount_Button.TabIndex = 13;
-            this.NewAccount_Button.Text = "¿No tienes un usuario?\r\n!Crea una cuenta aquí¡";
-            this.NewAccount_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.Location = new System.Drawing.Point(94, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 31);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "LOGIN";
             // 
-            // Loading_Indicator
+            // User_Textbox
             // 
-            this.Loading_Indicator.AnimationSpeed = 85;
-            this.Loading_Indicator.AutoStart = true;
-            this.Loading_Indicator.BackColor = System.Drawing.Color.Transparent;
-            this.Loading_Indicator.CircleSize = 1F;
-            this.Loading_Indicator.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.Loading_Indicator.Location = new System.Drawing.Point(369, 204);
-            this.Loading_Indicator.Name = "Loading_Indicator";
-            this.Loading_Indicator.Size = new System.Drawing.Size(90, 90);
-            this.Loading_Indicator.TabIndex = 5;
-            this.Loading_Indicator.UseTransparentBackground = true;
+            this.User_Textbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.User_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.User_Textbox.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.User_Textbox.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.User_Textbox.Location = new System.Drawing.Point(34, 105);
+            this.User_Textbox.Name = "User_Textbox";
+            this.User_Textbox.Size = new System.Drawing.Size(236, 28);
+            this.User_Textbox.TabIndex = 1;
+            this.User_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Password_Textbox
+            // 
+            this.Password_Textbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Password_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Password_Textbox.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password_Textbox.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Password_Textbox.Location = new System.Drawing.Point(40, 194);
+            this.Password_Textbox.Name = "Password_Textbox";
+            this.Password_Textbox.Size = new System.Drawing.Size(199, 28);
+            this.Password_Textbox.TabIndex = 1;
+            this.Password_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Password_Textbox.UseSystemPasswordChar = true;
             // 
             // SeePass_Button
             // 
@@ -297,6 +251,24 @@ namespace BUS_Manager.Forms
             this.Pass_Picture.TabIndex = 8;
             this.Pass_Picture.TabStop = false;
             // 
+            // Pass_Label
+            // 
+            this.Pass_Label.AutoSize = true;
+            this.Pass_Label.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pass_Label.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Pass_Label.Location = new System.Drawing.Point(4, 178);
+            this.Pass_Label.Name = "Pass_Label";
+            this.Pass_Label.Size = new System.Drawing.Size(74, 19);
+            this.Pass_Label.TabIndex = 7;
+            this.Pass_Label.Text = "contraseña";
+            // 
+            // Pass_Separator
+            // 
+            this.Pass_Separator.Location = new System.Drawing.Point(4, 223);
+            this.Pass_Separator.Name = "Pass_Separator";
+            this.Pass_Separator.Size = new System.Drawing.Size(266, 10);
+            this.Pass_Separator.TabIndex = 5;
+            // 
             // User_Picture
             // 
             this.User_Picture.Image = global::BUS_Manager.Properties.Resources.UserIcon;
@@ -307,16 +279,48 @@ namespace BUS_Manager.Forms
             this.User_Picture.TabIndex = 4;
             this.User_Picture.TabStop = false;
             // 
-            // Background_Picture
+            // User_Label
             // 
-            this.Background_Picture.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Background_Picture.Image = global::BUS_Manager.Properties.Resources.Template;
-            this.Background_Picture.Location = new System.Drawing.Point(0, 0);
-            this.Background_Picture.Name = "Background_Picture";
-            this.Background_Picture.Size = new System.Drawing.Size(831, 541);
-            this.Background_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Background_Picture.TabIndex = 0;
-            this.Background_Picture.TabStop = false;
+            this.User_Label.AutoSize = true;
+            this.User_Label.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.User_Label.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.User_Label.Location = new System.Drawing.Point(4, 89);
+            this.User_Label.Name = "User_Label";
+            this.User_Label.Size = new System.Drawing.Size(52, 19);
+            this.User_Label.TabIndex = 3;
+            this.User_Label.Text = "usuario";
+            // 
+            // User_Separator
+            // 
+            this.User_Separator.Location = new System.Drawing.Point(4, 135);
+            this.User_Separator.Name = "User_Separator";
+            this.User_Separator.Size = new System.Drawing.Size(266, 10);
+            this.User_Separator.TabIndex = 1;
+            // 
+            // ForgotPass_Button
+            // 
+            this.ForgotPass_Button.AutoSize = true;
+            this.ForgotPass_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ForgotPass_Button.Font = new System.Drawing.Font("Ubuntu Light", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForgotPass_Button.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ForgotPass_Button.Location = new System.Drawing.Point(121, 230);
+            this.ForgotPass_Button.Name = "ForgotPass_Button";
+            this.ForgotPass_Button.Size = new System.Drawing.Size(152, 16);
+            this.ForgotPass_Button.TabIndex = 11;
+            this.ForgotPass_Button.Text = "¡Se me olvidó la contraseña!";
+            // 
+            // Loading_Indicator
+            // 
+            this.Loading_Indicator.AnimationSpeed = 85;
+            this.Loading_Indicator.AutoStart = true;
+            this.Loading_Indicator.BackColor = System.Drawing.Color.Transparent;
+            this.Loading_Indicator.CircleSize = 1F;
+            this.Loading_Indicator.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.Loading_Indicator.Location = new System.Drawing.Point(369, 204);
+            this.Loading_Indicator.Name = "Loading_Indicator";
+            this.Loading_Indicator.Size = new System.Drawing.Size(90, 90);
+            this.Loading_Indicator.TabIndex = 5;
+            this.Loading_Indicator.UseTransparentBackground = true;
             // 
             // Login
             // 
@@ -324,7 +328,7 @@ namespace BUS_Manager.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(831, 541);
             this.Controls.Add(this.Login_Panel);
-            this.Controls.Add(this.RezizeButton);
+            this.Controls.Add(this.Rezize_Button);
             this.Controls.Add(this.Minimize_Button);
             this.Controls.Add(this.Exit_Button);
             this.Controls.Add(this.Background_Picture);
@@ -336,12 +340,12 @@ namespace BUS_Manager.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.Shown += new System.EventHandler(this.Login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Background_Picture)).EndInit();
             this.Login_Panel.ResumeLayout(false);
             this.Login_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SeePass_Button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pass_Picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.User_Picture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Background_Picture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -351,7 +355,7 @@ namespace BUS_Manager.Forms
         private System.Windows.Forms.PictureBox Background_Picture;
         private Guna.UI2.WinForms.Guna2CircleButton Exit_Button;
         private Guna.UI2.WinForms.Guna2Elipse Form_Elipse;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch RezizeButton;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch Rezize_Button;
         private Guna.UI2.WinForms.Guna2CircleButton Minimize_Button;
         private Guna.UI2.WinForms.Guna2DragControl Form_Drag;
         private Guna.UI2.WinForms.Guna2Panel Login_Panel;

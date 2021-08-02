@@ -11,7 +11,8 @@ namespace BUS_Manager.Forms
 
         #region Variables
 
-        MessageForm messageForm = new MessageForm();
+        Form MForm = new Form();
+        Datos.Classes.PublicDataAndVariables PublicDataAndVariables = new Datos.Classes.PublicDataAndVariables();
 
         #endregion
 
@@ -28,18 +29,27 @@ namespace BUS_Manager.Forms
         /// <param name="_title"></param>
         /// <param name="_body"></param>
         /// <param name="_NoButtons"></param>
-        private void ShowMessage(string _title, string _body, int _NoButtons)
+        private void ShowMessage(string _title, string _body, int _NoButtons, bool _sec)
         {
+            //Creando la instancia.
+            MessageForm messageForm = new MessageForm();
+
             //Aplicando el texto.
             messageForm.Title = _title;
             messageForm.Body = _body;
             messageForm.NoButtons = _NoButtons;
+            messageForm.Sec = _sec;
 
             //Aplicando la animación.
             //Guna desactualizado...
 
             //Mostrando.
-            messageForm.ShowDialog();
+            try
+            { messageForm.ShowDialog(); }
+            catch (Exception error) { MessageBox.Show("Ha ocurrido un error: " + error.Message); }
+
+            //Salida.
+            MForm = messageForm;
         }
         #endregion
 
@@ -48,8 +58,80 @@ namespace BUS_Manager.Forms
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Login_Load(object sender, EventArgs e)
-        { ShowMessage("Saludos...", "Bienvenido, inicié sesión con sus credenciales para comenzar\n\nEste y las demás cajas de mensajes aparecerán en la posición del ratón (Mouse).", 1); }
+        void Login_Load(object sender, EventArgs e)
+        {
+            ShowMessage("Saludos...", "Bienvenido, inicié sesión con sus credenciales para comenzar\n\nEste y las demás cajas de mensajes aparecerán en la posición del ratón (Mouse).", 1, true);
+        }
+
+
+        /// <summary>
+        /// Esta función es la que permite al usuario minimizar, maximizar y
+        /// salir de la aplicación dependiendo al botón que se presione.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="ev"></param>
+        void FormControl(object sender, EventArgs ev)
+        {
+            //Creando instancia del objeto.
+            Control ctrl = (Control)sender;
+
+            //Conociendo el botón que se presionó.
+            foreach (Control control in Controls)
+            {
+                switch (ctrl.Name)
+                {
+                    //En caso de salir de la aplicación.
+                    case "Exit_Button":
+                        ShowMessage("¡Está saliendo de la aplicación!", "¿Está seguro que desea salir de la aplicación?", 2, false);
+                        if (MForm.DialogResult == DialogResult.OK)
+                            Application.Exit();
+                        break;
+
+                    //En caso de Botón de minimizar.
+                    case "Minimize_Button":
+                        WindowState = FormWindowState.Minimized;
+                        break;
+
+                    //En caso de Botón de maximizar.
+                    case "Rezize_Button":
+                        Rezize_Button.Checked = false;
+                        ShowMessage("¡Opción no valida!", "Esta opción no está permitida en ese formulario", 1, true);
+                        break;
+                }
+                //Lo que hace que el ciclo no se repita más veces, si ya
+                //encontró lo que buscaba.
+                break;
+            }
+        }
+
+        void LoginEvent(object sender, EventArgs ev)
+        {
+            #region Login con variables estáticas
+            for (int i = 0; i <= PublicDataAndVariables.StaticUserName.Length; i++)
+            {
+                if (User_Textbox.Text == PublicDataAndVariables.StaticUserName[i] && Password_Textbox.Text == PublicDataAndVariables.StaticPassword[i])
+                {
+                    ShowMessage("Inició sesión", "Bienvenido " + User_Textbox.Text + "\nPodrá acceder al programa en breve.", 1, true);
+                    Password_Textbox.Text = string.Empty;
+
+                    MainForm mainForm = new MainForm();
+                    mainForm.Show();
+                    return;
+                }
+                else
+                {
+                    ShowMessage("Credenciales incorrectas", "Usuario y/o Contraseña son credenciales incorrectas", 1, true);
+                    return;
+                }
+            }
+
+
+            #endregion
+
+            #region Funcion con SQL
+
+            #endregion
+        }
 
         #endregion
     }

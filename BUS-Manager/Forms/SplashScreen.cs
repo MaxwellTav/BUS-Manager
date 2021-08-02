@@ -3,6 +3,10 @@ using System.Windows.Forms;
 
 namespace BUS_Manager
 {
+    /// <summary>
+    /// El SplashScreen es el formulario el cual controlará el cerrar de
+    /// los demás formularios.
+    /// </summary>
     public partial class SplashScreen : Form
     {
         #region Useless
@@ -70,9 +74,11 @@ namespace BUS_Manager
             Indicator_LoadingIndicator.Visible = false;
             ProgressBar.Value = 100;
 
-            Forms.Login mainForm = new Forms.Login(); //Creando instancia del Formulario.
-            mainForm.Show(); //Mostrando la instancia del Formulario ya creado.
-            Visible = false; //ocultando el formulario actual
+            Forms.Login Login = new Forms.Login(); //Creando instancia del Formulario.
+            //Login.Owner = this;
+            Login.Show(); //Mostrando la instancia del Formulario ya creado.
+
+            Visible = false;
         }
 
         #endregion
@@ -96,7 +102,7 @@ namespace BUS_Manager
             ///En caso contrario, baraja duríiiisimo.
             ///</Sumary>
             if (Properties.Settings.Default.UseAnimAgain_Value)
-            { _UseAnims = true; UseAnimAgain_Bool.Checked = true;  }
+            { _UseAnims = true; UseAnimAgain_Bool.Checked = true; }
             else
             { _UseAnims = false; UseAnimAgain_Bool.Checked = false; }
 

@@ -117,6 +117,10 @@
       <Project>{4c5b4010-8142-4502-8223-7e438754b5bf}</Project>
       <Name>Datos</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{455613be-5b2d-44de-89a4-eac88bebfd9d}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Checked.png" />

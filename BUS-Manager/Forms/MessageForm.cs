@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BUS_Manager.Forms
@@ -13,6 +14,7 @@ namespace BUS_Manager.Forms
 
         public string Title, Body;
         public int NoButtons;
+        public bool Sec = false;
 
         public int SecondLeft = 10; //Variable que se utiliza para contar cuando se cerrará automaticamente el mensaje.
 
@@ -31,7 +33,7 @@ namespace BUS_Manager.Forms
             //Configuración inicial para evitar BUGS.
             BodyMessage_Label.Text = "BodyMessage_Label error";
             TitleMessage_Label.Text = "TitleMessage_Label error";
-            Yes_Button.Text = "Si - 10";
+            Yes_Button.Text = "Si";
             No_Button.Text = "No";
             AutomaticlyCloseMessage_Timer.Enabled = true;
             SecondLeft = 10;
@@ -46,7 +48,7 @@ namespace BUS_Manager.Forms
             #endregion
 
             //Esta es la manera que hay que llamar la función para mostrar el mensaje.
-            ShowMessage(Body, Title, NoButtons);
+            ShowMessage(Body, Title, NoButtons, Sec);
         }
 
         /// <summary>
@@ -56,7 +58,7 @@ namespace BUS_Manager.Forms
         /// <param name="_Body"></param>
         /// <param name="_Title"></param>
         /// <param name="HowManyBtns"></param>
-        public void ShowMessage(string _Body, string _Title, int HowManyBtns)
+        public void ShowMessage(string _Body, string _Title, int HowManyBtns, bool sec)
         {
             //Intenta mostrar el mensaje de manera customizada.
             try
@@ -68,7 +70,7 @@ namespace BUS_Manager.Forms
                 {
                     case 1:
                         Yes_Button.Size = new System.Drawing.Size(457, 45);
-                        Yes_Button.Text = "Ok";
+                        Yes_Button.Text = "Si";
                         No_Button.Visible = false;
                         break;
 
@@ -77,6 +79,9 @@ namespace BUS_Manager.Forms
                         No_Button.Visible = true;
                         break;
                 }
+
+                if (!sec)
+                    AutomaticlyCloseMessage_Timer.Enabled = false;
             }
             //Si no se puede mostrar el mensaje de manera customizada,
             //pues intenta hacerla del modo tradicional.
