@@ -129,6 +129,7 @@ namespace BUS_Manager.Forms
             // 
             // Background_Picture
             // 
+            this.Background_Picture.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.Background_Picture.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Background_Picture.Image = global::BUS_Manager.Properties.Resources.Template;
             this.Background_Picture.Location = new System.Drawing.Point(0, 0);

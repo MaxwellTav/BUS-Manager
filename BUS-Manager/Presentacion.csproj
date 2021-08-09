@@ -113,16 +113,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Datos\Datos.csproj">
-      <Project>{4c5b4010-8142-4502-8223-7e438754b5bf}</Project>
-      <Name>Datos</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Negocios\Negocios.csproj">
-      <Project>{455613be-5b2d-44de-89a4-eac88bebfd9d}</Project>
-      <Name>Negocios</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Checked.png" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +141,43 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Driver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ruta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\SubForms\" />
+    <Folder Include="UserControls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

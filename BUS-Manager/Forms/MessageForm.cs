@@ -34,6 +34,7 @@ namespace BUS_Manager.Forms
             BodyMessage_Label.Text = "BodyMessage_Label error";
             TitleMessage_Label.Text = "TitleMessage_Label error";
             Yes_Button.Text = "Si";
+
             No_Button.Text = "No";
             AutomaticlyCloseMessage_Timer.Enabled = true;
             SecondLeft = 10;
@@ -70,7 +71,7 @@ namespace BUS_Manager.Forms
                 {
                     case 1:
                         Yes_Button.Size = new System.Drawing.Size(457, 45);
-                        Yes_Button.Text = "Si";
+                        Yes_Button.Text = "Ok";
                         No_Button.Visible = false;
                         break;
 
@@ -120,7 +121,7 @@ namespace BUS_Manager.Forms
             if (SecondLeft > 0)
             {
                 SecondLeft--;
-                Yes_Button.Text = ("Si - " + SecondLeft);
+                Yes_Button.Text = ("Ok - " + SecondLeft);
             }
             else
                 Output(DialogResult.No);

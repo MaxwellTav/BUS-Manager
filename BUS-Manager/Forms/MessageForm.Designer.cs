@@ -155,7 +155,6 @@ namespace BUS_Manager.Forms
         #endregion
 
         private Guna.UI2.WinForms.Guna2DragControl BodyMessage_Label_Drag;
-        private Guna.UI2.WinForms.Guna2Button Yes_Button;
         private System.Windows.Forms.Label BodyMessage_Label;
         private System.Windows.Forms.Label TitleMessage_Label;
         private Guna.UI2.WinForms.Guna2Elipse Form_Elipse;
@@ -163,5 +162,6 @@ namespace BUS_Manager.Forms
         private System.Windows.Forms.Timer AutomaticlyCloseMessage_Timer;
         private Guna.UI2.WinForms.Guna2DragControl TitleMessage_Label_Drag;
         public Guna.UI2.WinForms.Guna2AnimateWindow Form_Anim;
+        public Guna.UI2.WinForms.Guna2Button Yes_Button;
     }
 }

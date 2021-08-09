@@ -12,8 +12,7 @@ namespace BUS_Manager.Forms
         #region Variables
 
         Form MForm = new Form();
-        Datos.Classes.PublicDataAndVariables PublicDataAndVariables = new Datos.Classes.PublicDataAndVariables();
-
+        
         #endregion
 
         #region Eventos
@@ -29,7 +28,7 @@ namespace BUS_Manager.Forms
         /// <param name="_title"></param>
         /// <param name="_body"></param>
         /// <param name="_NoButtons"></param>
-        private void ShowMessage(string _title, string _body, int _NoButtons, bool _sec)
+        void ShowMessage(string _title, string _body, int _NoButtons, bool _sec, string BienvenidaBtn = null)
         {
             //Creando la instancia.
             MessageForm messageForm = new MessageForm();
@@ -40,8 +39,8 @@ namespace BUS_Manager.Forms
             messageForm.NoButtons = _NoButtons;
             messageForm.Sec = _sec;
 
-            //Aplicando la animación.
-            //Guna desactualizado...
+            if (BienvenidaBtn != string.Empty || BienvenidaBtn != null)
+                messageForm.Yes_Button.Text = BienvenidaBtn;
 
             //Mostrando.
             try
@@ -60,7 +59,7 @@ namespace BUS_Manager.Forms
         /// <param name="e"></param>
         void Login_Load(object sender, EventArgs e)
         {
-            ShowMessage("Saludos...", "Bienvenido, inicié sesión con sus credenciales para comenzar\n\nEste y las demás cajas de mensajes aparecerán en la posición del ratón (Mouse).", 1, true);
+            ShowMessage("Saludos...", "Bienvenido, inicié sesión con sus credenciales para comenzar\n\nEste y las demás cajas de mensajes aparecerán en la posición del ratón (Mouse).", 1, true, "¡Perfecto!");
         }
 
 
@@ -107,23 +106,7 @@ namespace BUS_Manager.Forms
         void LoginEvent(object sender, EventArgs ev)
         {
             #region Login con variables estáticas
-            for (int i = 0; i <= PublicDataAndVariables.StaticUserName.Length; i++)
-            {
-                if (User_Textbox.Text == PublicDataAndVariables.StaticUserName[i] && Password_Textbox.Text == PublicDataAndVariables.StaticPassword[i])
-                {
-                    ShowMessage("Inició sesión", "Bienvenido " + User_Textbox.Text + "\nPodrá acceder al programa en breve.", 1, true);
-                    Password_Textbox.Text = string.Empty;
-
-                    MainForm mainForm = new MainForm();
-                    mainForm.Show();
-                    return;
-                }
-                else
-                {
-                    ShowMessage("Credenciales incorrectas", "Usuario y/o Contraseña son credenciales incorrectas", 1, true);
-                    return;
-                }
-            }
+            
 
 
             #endregion
@@ -134,5 +117,6 @@ namespace BUS_Manager.Forms
         }
 
         #endregion
+
     }
 }
