@@ -207,8 +207,8 @@ namespace BUS_Manager.Forms
             if ((Location.X + 458) > Screen.PrimaryScreen.Bounds.Width)
                 Location = new Point((Screen.PrimaryScreen.Bounds.Width - 458), Location.Y);
 
-            if ((Location.Y + 286) > Screen.PrimaryScreen.Bounds.Height)
-                Location = new Point(Location.X, (Screen.PrimaryScreen.Bounds.Height - 286));
+            if ((Location.Y + 300) > Screen.PrimaryScreen.Bounds.Height)
+                Location = new Point(Location.X, (Screen.PrimaryScreen.Bounds.Height - 300));
         }
         #endregion
     }

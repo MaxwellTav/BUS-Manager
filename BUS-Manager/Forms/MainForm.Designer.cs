@@ -56,6 +56,7 @@ namespace BUS_Manager.Forms
             this.PathRegister_Button = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.VehicleRegister_Button = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.DriversRegister_Button = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.CreateRelations_Button = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.Top_Panel.SuspendLayout();
             this.Menu_Panel.SuspendLayout();
             this.View_Panel.SuspendLayout();
@@ -293,7 +294,7 @@ namespace BUS_Manager.Forms
             this.NavRegister_Button.ShadowDecoration.Parent = this.NavRegister_Button;
             this.NavRegister_Button.Size = new System.Drawing.Size(298, 69);
             this.NavRegister_Button.TabIndex = 1;
-            this.NavRegister_Button.Text = "Registros";
+            this.NavRegister_Button.Text = "Registrar";
             this.NavRegister_Button.Click += new System.EventHandler(this.ViewNavFunction);
             // 
             // NavView_Button
@@ -312,7 +313,7 @@ namespace BUS_Manager.Forms
             this.NavView_Button.ShadowDecoration.Parent = this.NavView_Button;
             this.NavView_Button.Size = new System.Drawing.Size(298, 69);
             this.NavView_Button.TabIndex = 0;
-            this.NavView_Button.Text = "Vistas";
+            this.NavView_Button.Text = "Vista";
             this.NavView_Button.Click += new System.EventHandler(this.ViewNavFunction);
             // 
             // TopLeft_Panel
@@ -362,7 +363,7 @@ namespace BUS_Manager.Forms
             this.PathView_Buttons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PathView_Buttons.AutoRoundedCorners = true;
-            this.PathView_Buttons.BorderRadius = 47;
+            this.PathView_Buttons.BorderRadius = 39;
             this.PathView_Buttons.CheckedState.Parent = this.PathView_Buttons;
             this.PathView_Buttons.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PathView_Buttons.CustomImages.Parent = this.PathView_Buttons;
@@ -374,10 +375,10 @@ namespace BUS_Manager.Forms
             this.PathView_Buttons.Image = global::BUS_Manager.Properties.Resources.Ruta;
             this.PathView_Buttons.ImageOffset = new System.Drawing.Point(-270, 25);
             this.PathView_Buttons.ImageSize = new System.Drawing.Size(50, 50);
-            this.PathView_Buttons.Location = new System.Drawing.Point(14, 308);
+            this.PathView_Buttons.Location = new System.Drawing.Point(14, 276);
             this.PathView_Buttons.Name = "PathView_Buttons";
             this.PathView_Buttons.ShadowDecoration.Parent = this.PathView_Buttons;
-            this.PathView_Buttons.Size = new System.Drawing.Size(661, 96);
+            this.PathView_Buttons.Size = new System.Drawing.Size(650, 80);
             this.PathView_Buttons.TabIndex = 0;
             this.PathView_Buttons.Text = "Rutas";
             this.PathView_Buttons.TextOffset = new System.Drawing.Point(0, -25);
@@ -388,7 +389,7 @@ namespace BUS_Manager.Forms
             this.VehiclesView_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.VehiclesView_Button.AutoRoundedCorners = true;
-            this.VehiclesView_Button.BorderRadius = 47;
+            this.VehiclesView_Button.BorderRadius = 39;
             this.VehiclesView_Button.CheckedState.Parent = this.VehiclesView_Button;
             this.VehiclesView_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.VehiclesView_Button.CustomImages.Parent = this.VehiclesView_Button;
@@ -400,10 +401,10 @@ namespace BUS_Manager.Forms
             this.VehiclesView_Button.Image = global::BUS_Manager.Properties.Resources.Vehicle;
             this.VehiclesView_Button.ImageOffset = new System.Drawing.Point(-270, 25);
             this.VehiclesView_Button.ImageSize = new System.Drawing.Size(50, 50);
-            this.VehiclesView_Button.Location = new System.Drawing.Point(14, 206);
+            this.VehiclesView_Button.Location = new System.Drawing.Point(14, 190);
             this.VehiclesView_Button.Name = "VehiclesView_Button";
             this.VehiclesView_Button.ShadowDecoration.Parent = this.VehiclesView_Button;
-            this.VehiclesView_Button.Size = new System.Drawing.Size(661, 96);
+            this.VehiclesView_Button.Size = new System.Drawing.Size(650, 80);
             this.VehiclesView_Button.TabIndex = 0;
             this.VehiclesView_Button.Text = "Vehiculos";
             this.VehiclesView_Button.TextOffset = new System.Drawing.Point(0, -25);
@@ -414,7 +415,7 @@ namespace BUS_Manager.Forms
             this.DriversView_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DriversView_Button.AutoRoundedCorners = true;
-            this.DriversView_Button.BorderRadius = 47;
+            this.DriversView_Button.BorderRadius = 39;
             this.DriversView_Button.CheckedState.Parent = this.DriversView_Button;
             this.DriversView_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DriversView_Button.CustomImages.Parent = this.DriversView_Button;
@@ -429,7 +430,7 @@ namespace BUS_Manager.Forms
             this.DriversView_Button.Location = new System.Drawing.Point(14, 104);
             this.DriversView_Button.Name = "DriversView_Button";
             this.DriversView_Button.ShadowDecoration.Parent = this.DriversView_Button;
-            this.DriversView_Button.Size = new System.Drawing.Size(661, 96);
+            this.DriversView_Button.Size = new System.Drawing.Size(650, 80);
             this.DriversView_Button.TabIndex = 0;
             this.DriversView_Button.Text = "Conductores";
             this.DriversView_Button.TextOffset = new System.Drawing.Point(0, -25);
@@ -442,6 +443,7 @@ namespace BUS_Manager.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Register_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Register_Panel.Controls.Add(this.RegsiterTitle_Picture);
+            this.Register_Panel.Controls.Add(this.CreateRelations_Button);
             this.Register_Panel.Controls.Add(this.PathRegister_Button);
             this.Register_Panel.Controls.Add(this.VehicleRegister_Button);
             this.Register_Panel.Controls.Add(this.DriversRegister_Button);
@@ -471,7 +473,7 @@ namespace BUS_Manager.Forms
             this.PathRegister_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PathRegister_Button.AutoRoundedCorners = true;
-            this.PathRegister_Button.BorderRadius = 47;
+            this.PathRegister_Button.BorderRadius = 39;
             this.PathRegister_Button.CheckedState.Parent = this.PathRegister_Button;
             this.PathRegister_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PathRegister_Button.CustomImages.Parent = this.PathRegister_Button;
@@ -483,10 +485,10 @@ namespace BUS_Manager.Forms
             this.PathRegister_Button.Image = global::BUS_Manager.Properties.Resources.Ruta;
             this.PathRegister_Button.ImageOffset = new System.Drawing.Point(-270, 25);
             this.PathRegister_Button.ImageSize = new System.Drawing.Size(50, 50);
-            this.PathRegister_Button.Location = new System.Drawing.Point(14, 308);
+            this.PathRegister_Button.Location = new System.Drawing.Point(14, 276);
             this.PathRegister_Button.Name = "PathRegister_Button";
             this.PathRegister_Button.ShadowDecoration.Parent = this.PathRegister_Button;
-            this.PathRegister_Button.Size = new System.Drawing.Size(661, 96);
+            this.PathRegister_Button.Size = new System.Drawing.Size(650, 80);
             this.PathRegister_Button.TabIndex = 0;
             this.PathRegister_Button.Text = "Ruta";
             this.PathRegister_Button.TextOffset = new System.Drawing.Point(0, -25);
@@ -497,7 +499,7 @@ namespace BUS_Manager.Forms
             this.VehicleRegister_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.VehicleRegister_Button.AutoRoundedCorners = true;
-            this.VehicleRegister_Button.BorderRadius = 47;
+            this.VehicleRegister_Button.BorderRadius = 39;
             this.VehicleRegister_Button.CheckedState.Parent = this.VehicleRegister_Button;
             this.VehicleRegister_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.VehicleRegister_Button.CustomImages.Parent = this.VehicleRegister_Button;
@@ -509,10 +511,10 @@ namespace BUS_Manager.Forms
             this.VehicleRegister_Button.Image = global::BUS_Manager.Properties.Resources.Vehicle;
             this.VehicleRegister_Button.ImageOffset = new System.Drawing.Point(-270, 25);
             this.VehicleRegister_Button.ImageSize = new System.Drawing.Size(50, 50);
-            this.VehicleRegister_Button.Location = new System.Drawing.Point(14, 206);
+            this.VehicleRegister_Button.Location = new System.Drawing.Point(14, 190);
             this.VehicleRegister_Button.Name = "VehicleRegister_Button";
             this.VehicleRegister_Button.ShadowDecoration.Parent = this.VehicleRegister_Button;
-            this.VehicleRegister_Button.Size = new System.Drawing.Size(661, 96);
+            this.VehicleRegister_Button.Size = new System.Drawing.Size(650, 80);
             this.VehicleRegister_Button.TabIndex = 0;
             this.VehicleRegister_Button.Text = "Vehiculo";
             this.VehicleRegister_Button.TextOffset = new System.Drawing.Point(0, -25);
@@ -523,7 +525,7 @@ namespace BUS_Manager.Forms
             this.DriversRegister_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DriversRegister_Button.AutoRoundedCorners = true;
-            this.DriversRegister_Button.BorderRadius = 47;
+            this.DriversRegister_Button.BorderRadius = 39;
             this.DriversRegister_Button.CheckedState.Parent = this.DriversRegister_Button;
             this.DriversRegister_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DriversRegister_Button.CustomImages.Parent = this.DriversRegister_Button;
@@ -538,11 +540,37 @@ namespace BUS_Manager.Forms
             this.DriversRegister_Button.Location = new System.Drawing.Point(14, 104);
             this.DriversRegister_Button.Name = "DriversRegister_Button";
             this.DriversRegister_Button.ShadowDecoration.Parent = this.DriversRegister_Button;
-            this.DriversRegister_Button.Size = new System.Drawing.Size(661, 96);
+            this.DriversRegister_Button.Size = new System.Drawing.Size(650, 80);
             this.DriversRegister_Button.TabIndex = 0;
             this.DriversRegister_Button.Text = "Conductor";
             this.DriversRegister_Button.TextOffset = new System.Drawing.Point(0, -25);
             this.DriversRegister_Button.Click += new System.EventHandler(this.DriversView_Button_Click);
+            // 
+            // CreateRelations_Button
+            // 
+            this.CreateRelations_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CreateRelations_Button.AutoRoundedCorners = true;
+            this.CreateRelations_Button.BorderRadius = 39;
+            this.CreateRelations_Button.CheckedState.Parent = this.CreateRelations_Button;
+            this.CreateRelations_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CreateRelations_Button.CustomImages.Parent = this.CreateRelations_Button;
+            this.CreateRelations_Button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(140)))), ((int)(((byte)(144)))));
+            this.CreateRelations_Button.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(81)))), ((int)(((byte)(85)))));
+            this.CreateRelations_Button.Font = new System.Drawing.Font("Ubuntu", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateRelations_Button.ForeColor = System.Drawing.Color.White;
+            this.CreateRelations_Button.HoverState.Parent = this.CreateRelations_Button;
+            this.CreateRelations_Button.Image = global::BUS_Manager.Properties.Resources.Cross;
+            this.CreateRelations_Button.ImageOffset = new System.Drawing.Point(-270, 25);
+            this.CreateRelations_Button.ImageSize = new System.Drawing.Size(50, 50);
+            this.CreateRelations_Button.Location = new System.Drawing.Point(14, 362);
+            this.CreateRelations_Button.Name = "CreateRelations_Button";
+            this.CreateRelations_Button.ShadowDecoration.Parent = this.CreateRelations_Button;
+            this.CreateRelations_Button.Size = new System.Drawing.Size(650, 80);
+            this.CreateRelations_Button.TabIndex = 0;
+            this.CreateRelations_Button.Text = "Relacionar";
+            this.CreateRelations_Button.TextOffset = new System.Drawing.Point(0, -25);
+            this.CreateRelations_Button.Click += new System.EventHandler(this.DriversView_Button_Click);
             // 
             // MainForm
             // 
@@ -551,8 +579,8 @@ namespace BUS_Manager.Forms
             this.ClientSize = new System.Drawing.Size(987, 504);
             this.Controls.Add(this.Top_Panel);
             this.Controls.Add(this.Menu_Panel);
-            this.Controls.Add(this.View_Panel);
             this.Controls.Add(this.Register_Panel);
+            this.Controls.Add(this.View_Panel);
             this.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -600,5 +628,6 @@ namespace BUS_Manager.Forms
         private Guna.UI2.WinForms.Guna2Button NavView_Button;
         private System.Windows.Forms.Panel TopLeft_Panel;
         private System.Windows.Forms.PictureBox ViewTitle_Picture;
+        private Guna.UI2.WinForms.Guna2GradientTileButton CreateRelations_Button;
     }
 }

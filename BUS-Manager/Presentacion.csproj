@@ -75,6 +75,12 @@
     <Compile Include="Forms\SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SubForms\MatchEntitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForms\MatchEntitiesForm.Designer.cs">
+      <DependentUpon>MatchEntitiesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SubForms\RegisterDriverForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForms\MatchEntitiesForm.resx">
+      <DependentUpon>MatchEntitiesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SubForms\RegisterDriverForm.resx">
       <DependentUpon>RegisterDriverForm.cs</DependentUpon>
@@ -231,16 +240,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UserControls\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Datos\Datos.csproj">
-      <Project>{f9c5fb09-801d-45e5-90d1-55e689e84988}</Project>
-      <Name>Datos</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Negocios\Negocios.csproj">
-      <Project>{736da1a4-345a-4cca-af59-f8114103356d}</Project>
-      <Name>Negocios</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

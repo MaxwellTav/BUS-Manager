@@ -160,6 +160,13 @@ namespace BUS_Manager.Forms
                     RegisterPathForm registerPath = new RegisterPathForm();
                     registerPath.ShowDialog();
                     break;
+                #endregion
+
+                #region Relacionar.
+                case "CreateRelations_Button":
+                    MatchEntitiesForm matchEntities = new MatchEntitiesForm();
+                    matchEntities.ShowDialog();
+                    break;
                     #endregion
             }
 
