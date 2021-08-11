@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace BUS_Manager.Forms
@@ -50,6 +50,10 @@ namespace BUS_Manager.Forms
 
             //Esta es la manera que hay que llamar la función para mostrar el mensaje.
             ShowMessage(Body, Title, NoButtons, Sec);
+
+            #region Arreglando bug de la ventana.
+            ComprobationLocationForm();
+            #endregion
         }
 
         /// <summary>
@@ -73,11 +77,13 @@ namespace BUS_Manager.Forms
                         Yes_Button.Size = new System.Drawing.Size(457, 45);
                         Yes_Button.Text = "Ok";
                         No_Button.Visible = false;
+                        TimerProgressBar.Enabled = true;
                         break;
 
                     default:
                         Yes_Button.Size = new System.Drawing.Size(228, 45);
                         No_Button.Visible = true;
+                        TimerProgressBar.Enabled = false;
                         break;
                 }
 
@@ -149,6 +155,14 @@ namespace BUS_Manager.Forms
         }
 
         /// <summary>
+        /// Esta función se ejecutará al mover el formulario.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MessageForm_Move(object sender, EventArgs e)
+        { ComprobationLocationForm(); }
+
+        /// <summary>
         /// Botón no.
         /// </summary>
         /// <param name="sender"></param>
@@ -157,6 +171,44 @@ namespace BUS_Manager.Forms
         {
             AutomaticlyCloseMessage_Timer.Enabled = false;
             Output(DialogResult.No);
+        }
+
+        /// <summary>
+        /// Loading Feedback
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TimerProgressBar_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageProgressBar.Value < 100)
+                    MessageProgressBar.Value++;
+                else if (MessageProgressBar2.Value < 100)
+                    MessageProgressBar2.Value++;
+                else
+                {
+                    MessageProgressBar.Value = 100;
+                    MessageProgressBar2.Value = 100;
+                    TimerProgressBar.Enabled = false;
+                }
+            }
+            catch { }
+        }
+
+        private void ComprobationLocationForm()
+        {
+            if (Location.X < 0)
+                Location = new Point(0, Location.Y);
+
+            if (Location.Y < 0)
+                Location = new Point(Location.X, 0);
+
+            if ((Location.X + 458) > Screen.PrimaryScreen.Bounds.Width)
+                Location = new Point((Screen.PrimaryScreen.Bounds.Width - 458), Location.Y);
+
+            if ((Location.Y + 286) > Screen.PrimaryScreen.Bounds.Height)
+                Location = new Point(Location.X, (Screen.PrimaryScreen.Bounds.Height - 286));
         }
         #endregion
     }

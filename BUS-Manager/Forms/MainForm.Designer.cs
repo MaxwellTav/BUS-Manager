@@ -38,30 +38,30 @@ namespace BUS_Manager.Forms
             this.Exit_Button = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Form_Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Left_Drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.Menu_Panel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.NavHelp_Button = new Guna.UI2.WinForms.Guna2Button();
+            this.NavSupport_Button = new Guna.UI2.WinForms.Guna2Button();
+            this.NavConfiguration_Button = new Guna.UI2.WinForms.Guna2Button();
+            this.NavOutput_Button = new Guna.UI2.WinForms.Guna2Button();
+            this.NavRegister_Button = new Guna.UI2.WinForms.Guna2Button();
+            this.NavView_Button = new Guna.UI2.WinForms.Guna2Button();
+            this.TopLeft_Panel = new System.Windows.Forms.Panel();
             this.View_Panel = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.DriversView_Button = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.VehiclesView_Button = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.ViewTitle_Picture = new System.Windows.Forms.PictureBox();
             this.PathView_Buttons = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.VehiclesView_Button = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.DriversView_Button = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.Register_Panel = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.RegsiterTitle_Picture = new System.Windows.Forms.PictureBox();
             this.PathRegister_Button = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.VehicleRegister_Button = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.DriversRegister_Button = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.RegsiterTitle_Picture = new System.Windows.Forms.PictureBox();
-            this.ViewTitle_Picture = new System.Windows.Forms.PictureBox();
-            this.TopLeft_Panel = new System.Windows.Forms.Panel();
-            this.NavView_Button = new Guna.UI2.WinForms.Guna2Button();
-            this.NavRegister_Button = new Guna.UI2.WinForms.Guna2Button();
-            this.NavOutput_Button = new Guna.UI2.WinForms.Guna2Button();
-            this.NavConfiguration_Button = new Guna.UI2.WinForms.Guna2Button();
-            this.NavSupport_Button = new Guna.UI2.WinForms.Guna2Button();
-            this.NavHelp_Button = new Guna.UI2.WinForms.Guna2Button();
-            this.Menu_Panel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.Top_Panel.SuspendLayout();
+            this.Menu_Panel.SuspendLayout();
             this.View_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewTitle_Picture)).BeginInit();
             this.Register_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RegsiterTitle_Picture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ViewTitle_Picture)).BeginInit();
-            this.Menu_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Top_Drag
@@ -177,6 +177,155 @@ namespace BUS_Manager.Forms
             // 
             this.Left_Drag.TargetControl = this.Menu_Panel;
             // 
+            // Menu_Panel
+            // 
+            this.Menu_Panel.BorderColor = System.Drawing.Color.Gray;
+            this.Menu_Panel.BorderRadius = 1;
+            this.Menu_Panel.Controls.Add(this.NavHelp_Button);
+            this.Menu_Panel.Controls.Add(this.NavSupport_Button);
+            this.Menu_Panel.Controls.Add(this.NavConfiguration_Button);
+            this.Menu_Panel.Controls.Add(this.NavOutput_Button);
+            this.Menu_Panel.Controls.Add(this.NavRegister_Button);
+            this.Menu_Panel.Controls.Add(this.NavView_Button);
+            this.Menu_Panel.Controls.Add(this.TopLeft_Panel);
+            this.Menu_Panel.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.Menu_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Menu_Panel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.Menu_Panel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.Menu_Panel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
+            this.Menu_Panel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
+            this.Menu_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Menu_Panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Menu_Panel.Name = "Menu_Panel";
+            this.Menu_Panel.ShadowDecoration.Parent = this.Menu_Panel;
+            this.Menu_Panel.Size = new System.Drawing.Size(298, 504);
+            this.Menu_Panel.TabIndex = 0;
+            // 
+            // NavHelp_Button
+            // 
+            this.NavHelp_Button.CheckedState.Parent = this.NavHelp_Button;
+            this.NavHelp_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NavHelp_Button.CustomImages.Parent = this.NavHelp_Button;
+            this.NavHelp_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.NavHelp_Button.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavHelp_Button.ForeColor = System.Drawing.Color.White;
+            this.NavHelp_Button.HoverState.Parent = this.NavHelp_Button;
+            this.NavHelp_Button.Image = global::BUS_Manager.Properties.Resources.Ayuda;
+            this.NavHelp_Button.ImageSize = new System.Drawing.Size(35, 35);
+            this.NavHelp_Button.Location = new System.Drawing.Point(0, 373);
+            this.NavHelp_Button.Name = "NavHelp_Button";
+            this.NavHelp_Button.ShadowDecoration.Parent = this.NavHelp_Button;
+            this.NavHelp_Button.Size = new System.Drawing.Size(298, 69);
+            this.NavHelp_Button.TabIndex = 5;
+            this.NavHelp_Button.Text = "Ayuda";
+            this.NavHelp_Button.Click += new System.EventHandler(this.ViewNavFunction);
+            // 
+            // NavSupport_Button
+            // 
+            this.NavSupport_Button.CheckedState.Parent = this.NavSupport_Button;
+            this.NavSupport_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NavSupport_Button.CustomImages.Parent = this.NavSupport_Button;
+            this.NavSupport_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.NavSupport_Button.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavSupport_Button.ForeColor = System.Drawing.Color.White;
+            this.NavSupport_Button.HoverState.Parent = this.NavSupport_Button;
+            this.NavSupport_Button.Image = global::BUS_Manager.Properties.Resources.Support;
+            this.NavSupport_Button.ImageSize = new System.Drawing.Size(30, 30);
+            this.NavSupport_Button.Location = new System.Drawing.Point(0, 304);
+            this.NavSupport_Button.Name = "NavSupport_Button";
+            this.NavSupport_Button.ShadowDecoration.Parent = this.NavSupport_Button;
+            this.NavSupport_Button.Size = new System.Drawing.Size(298, 69);
+            this.NavSupport_Button.TabIndex = 4;
+            this.NavSupport_Button.Text = "Soporte Tecnico";
+            this.NavSupport_Button.Click += new System.EventHandler(this.ViewNavFunction);
+            // 
+            // NavConfiguration_Button
+            // 
+            this.NavConfiguration_Button.CheckedState.Parent = this.NavConfiguration_Button;
+            this.NavConfiguration_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NavConfiguration_Button.CustomImages.Parent = this.NavConfiguration_Button;
+            this.NavConfiguration_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.NavConfiguration_Button.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavConfiguration_Button.ForeColor = System.Drawing.Color.White;
+            this.NavConfiguration_Button.HoverState.Parent = this.NavConfiguration_Button;
+            this.NavConfiguration_Button.Image = global::BUS_Manager.Properties.Resources.Config;
+            this.NavConfiguration_Button.ImageSize = new System.Drawing.Size(40, 40);
+            this.NavConfiguration_Button.Location = new System.Drawing.Point(0, 235);
+            this.NavConfiguration_Button.Name = "NavConfiguration_Button";
+            this.NavConfiguration_Button.ShadowDecoration.Parent = this.NavConfiguration_Button;
+            this.NavConfiguration_Button.Size = new System.Drawing.Size(298, 69);
+            this.NavConfiguration_Button.TabIndex = 3;
+            this.NavConfiguration_Button.Text = "Configuraciones";
+            this.NavConfiguration_Button.Click += new System.EventHandler(this.ViewNavFunction);
+            // 
+            // NavOutput_Button
+            // 
+            this.NavOutput_Button.CheckedState.Parent = this.NavOutput_Button;
+            this.NavOutput_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NavOutput_Button.CustomImages.Parent = this.NavOutput_Button;
+            this.NavOutput_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.NavOutput_Button.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavOutput_Button.ForeColor = System.Drawing.Color.White;
+            this.NavOutput_Button.HoverState.Parent = this.NavOutput_Button;
+            this.NavOutput_Button.Image = global::BUS_Manager.Properties.Resources.Report;
+            this.NavOutput_Button.ImageSize = new System.Drawing.Size(35, 35);
+            this.NavOutput_Button.Location = new System.Drawing.Point(0, 166);
+            this.NavOutput_Button.Name = "NavOutput_Button";
+            this.NavOutput_Button.ShadowDecoration.Parent = this.NavOutput_Button;
+            this.NavOutput_Button.Size = new System.Drawing.Size(298, 69);
+            this.NavOutput_Button.TabIndex = 2;
+            this.NavOutput_Button.Text = "Salida | Reporte";
+            this.NavOutput_Button.Click += new System.EventHandler(this.ViewNavFunction);
+            // 
+            // NavRegister_Button
+            // 
+            this.NavRegister_Button.CheckedState.Parent = this.NavRegister_Button;
+            this.NavRegister_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NavRegister_Button.CustomImages.Parent = this.NavRegister_Button;
+            this.NavRegister_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.NavRegister_Button.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavRegister_Button.ForeColor = System.Drawing.Color.White;
+            this.NavRegister_Button.HoverState.Parent = this.NavRegister_Button;
+            this.NavRegister_Button.Image = global::BUS_Manager.Properties.Resources.New;
+            this.NavRegister_Button.ImageSize = new System.Drawing.Size(30, 30);
+            this.NavRegister_Button.Location = new System.Drawing.Point(0, 97);
+            this.NavRegister_Button.Name = "NavRegister_Button";
+            this.NavRegister_Button.ShadowDecoration.Parent = this.NavRegister_Button;
+            this.NavRegister_Button.Size = new System.Drawing.Size(298, 69);
+            this.NavRegister_Button.TabIndex = 1;
+            this.NavRegister_Button.Text = "Registros";
+            this.NavRegister_Button.Click += new System.EventHandler(this.ViewNavFunction);
+            // 
+            // NavView_Button
+            // 
+            this.NavView_Button.CheckedState.Parent = this.NavView_Button;
+            this.NavView_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NavView_Button.CustomImages.Parent = this.NavView_Button;
+            this.NavView_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.NavView_Button.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavView_Button.ForeColor = System.Drawing.Color.White;
+            this.NavView_Button.HoverState.Parent = this.NavView_Button;
+            this.NavView_Button.Image = global::BUS_Manager.Properties.Resources.View2;
+            this.NavView_Button.ImageSize = new System.Drawing.Size(30, 30);
+            this.NavView_Button.Location = new System.Drawing.Point(0, 28);
+            this.NavView_Button.Name = "NavView_Button";
+            this.NavView_Button.ShadowDecoration.Parent = this.NavView_Button;
+            this.NavView_Button.Size = new System.Drawing.Size(298, 69);
+            this.NavView_Button.TabIndex = 0;
+            this.NavView_Button.Text = "Vistas";
+            this.NavView_Button.Click += new System.EventHandler(this.ViewNavFunction);
+            // 
+            // TopLeft_Panel
+            // 
+            this.TopLeft_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(128)))), ((int)(((byte)(43)))));
+            this.TopLeft_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopLeft_Panel.Enabled = false;
+            this.TopLeft_Panel.Location = new System.Drawing.Point(0, 0);
+            this.TopLeft_Panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TopLeft_Panel.Name = "TopLeft_Panel";
+            this.TopLeft_Panel.Size = new System.Drawing.Size(298, 28);
+            this.TopLeft_Panel.TabIndex = 0;
+            // 
             // View_Panel
             // 
             this.View_Panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -196,55 +345,17 @@ namespace BUS_Manager.Forms
             this.View_Panel.TabIndex = 2;
             this.View_Panel.Tag = "UserC";
             // 
-            // DriversView_Button
+            // ViewTitle_Picture
             // 
-            this.DriversView_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DriversView_Button.AutoRoundedCorners = true;
-            this.DriversView_Button.BorderRadius = 47;
-            this.DriversView_Button.CheckedState.Parent = this.DriversView_Button;
-            this.DriversView_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DriversView_Button.CustomImages.Parent = this.DriversView_Button;
-            this.DriversView_Button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(140)))), ((int)(((byte)(144)))));
-            this.DriversView_Button.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(81)))), ((int)(((byte)(85)))));
-            this.DriversView_Button.Font = new System.Drawing.Font("Ubuntu", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DriversView_Button.ForeColor = System.Drawing.Color.White;
-            this.DriversView_Button.HoverState.Parent = this.DriversView_Button;
-            this.DriversView_Button.Image = global::BUS_Manager.Properties.Resources.Driver;
-            this.DriversView_Button.ImageOffset = new System.Drawing.Point(-270, 25);
-            this.DriversView_Button.ImageSize = new System.Drawing.Size(50, 50);
-            this.DriversView_Button.Location = new System.Drawing.Point(14, 104);
-            this.DriversView_Button.Name = "DriversView_Button";
-            this.DriversView_Button.ShadowDecoration.Parent = this.DriversView_Button;
-            this.DriversView_Button.Size = new System.Drawing.Size(661, 96);
-            this.DriversView_Button.TabIndex = 0;
-            this.DriversView_Button.Text = "Conductores";
-            this.DriversView_Button.TextOffset = new System.Drawing.Point(0, -25);
-            // 
-            // VehiclesView_Button
-            // 
-            this.VehiclesView_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.VehiclesView_Button.AutoRoundedCorners = true;
-            this.VehiclesView_Button.BorderRadius = 47;
-            this.VehiclesView_Button.CheckedState.Parent = this.VehiclesView_Button;
-            this.VehiclesView_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.VehiclesView_Button.CustomImages.Parent = this.VehiclesView_Button;
-            this.VehiclesView_Button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(140)))), ((int)(((byte)(144)))));
-            this.VehiclesView_Button.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(81)))), ((int)(((byte)(85)))));
-            this.VehiclesView_Button.Font = new System.Drawing.Font("Ubuntu", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VehiclesView_Button.ForeColor = System.Drawing.Color.White;
-            this.VehiclesView_Button.HoverState.Parent = this.VehiclesView_Button;
-            this.VehiclesView_Button.Image = global::BUS_Manager.Properties.Resources.Vehicle;
-            this.VehiclesView_Button.ImageOffset = new System.Drawing.Point(-270, 25);
-            this.VehiclesView_Button.ImageSize = new System.Drawing.Size(50, 50);
-            this.VehiclesView_Button.Location = new System.Drawing.Point(14, 206);
-            this.VehiclesView_Button.Name = "VehiclesView_Button";
-            this.VehiclesView_Button.ShadowDecoration.Parent = this.VehiclesView_Button;
-            this.VehiclesView_Button.Size = new System.Drawing.Size(661, 96);
-            this.VehiclesView_Button.TabIndex = 0;
-            this.VehiclesView_Button.Text = "Vehiculos";
-            this.VehiclesView_Button.TextOffset = new System.Drawing.Point(0, -25);
+            this.ViewTitle_Picture.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ViewTitle_Picture.BackgroundImage = global::BUS_Manager.Properties.Resources.View2;
+            this.ViewTitle_Picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ViewTitle_Picture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ViewTitle_Picture.Location = new System.Drawing.Point(309, 18);
+            this.ViewTitle_Picture.Name = "ViewTitle_Picture";
+            this.ViewTitle_Picture.Size = new System.Drawing.Size(70, 70);
+            this.ViewTitle_Picture.TabIndex = 2;
+            this.ViewTitle_Picture.TabStop = false;
             // 
             // PathView_Buttons
             // 
@@ -270,6 +381,59 @@ namespace BUS_Manager.Forms
             this.PathView_Buttons.TabIndex = 0;
             this.PathView_Buttons.Text = "Rutas";
             this.PathView_Buttons.TextOffset = new System.Drawing.Point(0, -25);
+            this.PathView_Buttons.Click += new System.EventHandler(this.DriversView_Button_Click);
+            // 
+            // VehiclesView_Button
+            // 
+            this.VehiclesView_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.VehiclesView_Button.AutoRoundedCorners = true;
+            this.VehiclesView_Button.BorderRadius = 47;
+            this.VehiclesView_Button.CheckedState.Parent = this.VehiclesView_Button;
+            this.VehiclesView_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.VehiclesView_Button.CustomImages.Parent = this.VehiclesView_Button;
+            this.VehiclesView_Button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(140)))), ((int)(((byte)(144)))));
+            this.VehiclesView_Button.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(81)))), ((int)(((byte)(85)))));
+            this.VehiclesView_Button.Font = new System.Drawing.Font("Ubuntu", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VehiclesView_Button.ForeColor = System.Drawing.Color.White;
+            this.VehiclesView_Button.HoverState.Parent = this.VehiclesView_Button;
+            this.VehiclesView_Button.Image = global::BUS_Manager.Properties.Resources.Vehicle;
+            this.VehiclesView_Button.ImageOffset = new System.Drawing.Point(-270, 25);
+            this.VehiclesView_Button.ImageSize = new System.Drawing.Size(50, 50);
+            this.VehiclesView_Button.Location = new System.Drawing.Point(14, 206);
+            this.VehiclesView_Button.Name = "VehiclesView_Button";
+            this.VehiclesView_Button.ShadowDecoration.Parent = this.VehiclesView_Button;
+            this.VehiclesView_Button.Size = new System.Drawing.Size(661, 96);
+            this.VehiclesView_Button.TabIndex = 0;
+            this.VehiclesView_Button.Text = "Vehiculos";
+            this.VehiclesView_Button.TextOffset = new System.Drawing.Point(0, -25);
+            this.VehiclesView_Button.Click += new System.EventHandler(this.DriversView_Button_Click);
+            // 
+            // DriversView_Button
+            // 
+            this.DriversView_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DriversView_Button.AutoRoundedCorners = true;
+            this.DriversView_Button.BorderRadius = 47;
+            this.DriversView_Button.CheckedState.Parent = this.DriversView_Button;
+            this.DriversView_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DriversView_Button.CustomImages.Parent = this.DriversView_Button;
+            this.DriversView_Button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(140)))), ((int)(((byte)(144)))));
+            this.DriversView_Button.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(81)))), ((int)(((byte)(85)))));
+            this.DriversView_Button.Font = new System.Drawing.Font("Ubuntu", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriversView_Button.ForeColor = System.Drawing.Color.White;
+            this.DriversView_Button.HoverState.Parent = this.DriversView_Button;
+            this.DriversView_Button.Image = global::BUS_Manager.Properties.Resources.Driver;
+            this.DriversView_Button.ImageOffset = new System.Drawing.Point(-270, 25);
+            this.DriversView_Button.ImageSize = new System.Drawing.Size(50, 50);
+            this.DriversView_Button.Location = new System.Drawing.Point(14, 104);
+            this.DriversView_Button.Name = "DriversView_Button";
+            this.DriversView_Button.ShadowDecoration.Parent = this.DriversView_Button;
+            this.DriversView_Button.Size = new System.Drawing.Size(661, 96);
+            this.DriversView_Button.TabIndex = 0;
+            this.DriversView_Button.Text = "Conductores";
+            this.DriversView_Button.TextOffset = new System.Drawing.Point(0, -25);
+            this.DriversView_Button.Click += new System.EventHandler(this.DriversView_Button_Click);
             // 
             // Register_Panel
             // 
@@ -289,6 +453,18 @@ namespace BUS_Manager.Forms
             this.Register_Panel.Size = new System.Drawing.Size(689, 476);
             this.Register_Panel.TabIndex = 3;
             this.Register_Panel.Tag = "UserC";
+            // 
+            // RegsiterTitle_Picture
+            // 
+            this.RegsiterTitle_Picture.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.RegsiterTitle_Picture.BackgroundImage = global::BUS_Manager.Properties.Resources.New;
+            this.RegsiterTitle_Picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.RegsiterTitle_Picture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.RegsiterTitle_Picture.Location = new System.Drawing.Point(309, 18);
+            this.RegsiterTitle_Picture.Name = "RegsiterTitle_Picture";
+            this.RegsiterTitle_Picture.Size = new System.Drawing.Size(70, 70);
+            this.RegsiterTitle_Picture.TabIndex = 1;
+            this.RegsiterTitle_Picture.TabStop = false;
             // 
             // PathRegister_Button
             // 
@@ -314,6 +490,7 @@ namespace BUS_Manager.Forms
             this.PathRegister_Button.TabIndex = 0;
             this.PathRegister_Button.Text = "Ruta";
             this.PathRegister_Button.TextOffset = new System.Drawing.Point(0, -25);
+            this.PathRegister_Button.Click += new System.EventHandler(this.DriversView_Button_Click);
             // 
             // VehicleRegister_Button
             // 
@@ -339,6 +516,7 @@ namespace BUS_Manager.Forms
             this.VehicleRegister_Button.TabIndex = 0;
             this.VehicleRegister_Button.Text = "Vehiculo";
             this.VehicleRegister_Button.TextOffset = new System.Drawing.Point(0, -25);
+            this.VehicleRegister_Button.Click += new System.EventHandler(this.DriversView_Button_Click);
             // 
             // DriversRegister_Button
             // 
@@ -364,179 +542,7 @@ namespace BUS_Manager.Forms
             this.DriversRegister_Button.TabIndex = 0;
             this.DriversRegister_Button.Text = "Conductor";
             this.DriversRegister_Button.TextOffset = new System.Drawing.Point(0, -25);
-            // 
-            // RegsiterTitle_Picture
-            // 
-            this.RegsiterTitle_Picture.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.RegsiterTitle_Picture.BackgroundImage = global::BUS_Manager.Properties.Resources.New;
-            this.RegsiterTitle_Picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.RegsiterTitle_Picture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.RegsiterTitle_Picture.Location = new System.Drawing.Point(309, 18);
-            this.RegsiterTitle_Picture.Name = "RegsiterTitle_Picture";
-            this.RegsiterTitle_Picture.Size = new System.Drawing.Size(70, 70);
-            this.RegsiterTitle_Picture.TabIndex = 1;
-            this.RegsiterTitle_Picture.TabStop = false;
-            // 
-            // ViewTitle_Picture
-            // 
-            this.ViewTitle_Picture.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.ViewTitle_Picture.BackgroundImage = global::BUS_Manager.Properties.Resources.View2;
-            this.ViewTitle_Picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ViewTitle_Picture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ViewTitle_Picture.Location = new System.Drawing.Point(309, 18);
-            this.ViewTitle_Picture.Name = "ViewTitle_Picture";
-            this.ViewTitle_Picture.Size = new System.Drawing.Size(70, 70);
-            this.ViewTitle_Picture.TabIndex = 2;
-            this.ViewTitle_Picture.TabStop = false;
-            // 
-            // TopLeft_Panel
-            // 
-            this.TopLeft_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(128)))), ((int)(((byte)(43)))));
-            this.TopLeft_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TopLeft_Panel.Enabled = false;
-            this.TopLeft_Panel.Location = new System.Drawing.Point(0, 0);
-            this.TopLeft_Panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TopLeft_Panel.Name = "TopLeft_Panel";
-            this.TopLeft_Panel.Size = new System.Drawing.Size(298, 28);
-            this.TopLeft_Panel.TabIndex = 0;
-            // 
-            // NavView_Button
-            // 
-            this.NavView_Button.CheckedState.Parent = this.NavView_Button;
-            this.NavView_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.NavView_Button.CustomImages.Parent = this.NavView_Button;
-            this.NavView_Button.Dock = System.Windows.Forms.DockStyle.Top;
-            this.NavView_Button.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavView_Button.ForeColor = System.Drawing.Color.White;
-            this.NavView_Button.HoverState.Parent = this.NavView_Button;
-            this.NavView_Button.Image = global::BUS_Manager.Properties.Resources.View2;
-            this.NavView_Button.ImageSize = new System.Drawing.Size(30, 30);
-            this.NavView_Button.Location = new System.Drawing.Point(0, 28);
-            this.NavView_Button.Name = "NavView_Button";
-            this.NavView_Button.ShadowDecoration.Parent = this.NavView_Button;
-            this.NavView_Button.Size = new System.Drawing.Size(298, 69);
-            this.NavView_Button.TabIndex = 0;
-            this.NavView_Button.Text = "Vistas";
-            this.NavView_Button.Click += new System.EventHandler(this.ViewNavFunction);
-            // 
-            // NavRegister_Button
-            // 
-            this.NavRegister_Button.CheckedState.Parent = this.NavRegister_Button;
-            this.NavRegister_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.NavRegister_Button.CustomImages.Parent = this.NavRegister_Button;
-            this.NavRegister_Button.Dock = System.Windows.Forms.DockStyle.Top;
-            this.NavRegister_Button.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavRegister_Button.ForeColor = System.Drawing.Color.White;
-            this.NavRegister_Button.HoverState.Parent = this.NavRegister_Button;
-            this.NavRegister_Button.Image = global::BUS_Manager.Properties.Resources.New;
-            this.NavRegister_Button.ImageSize = new System.Drawing.Size(30, 30);
-            this.NavRegister_Button.Location = new System.Drawing.Point(0, 97);
-            this.NavRegister_Button.Name = "NavRegister_Button";
-            this.NavRegister_Button.ShadowDecoration.Parent = this.NavRegister_Button;
-            this.NavRegister_Button.Size = new System.Drawing.Size(298, 69);
-            this.NavRegister_Button.TabIndex = 1;
-            this.NavRegister_Button.Text = "Registros";
-            this.NavRegister_Button.Click += new System.EventHandler(this.ViewNavFunction);
-            // 
-            // NavOutput_Button
-            // 
-            this.NavOutput_Button.CheckedState.Parent = this.NavOutput_Button;
-            this.NavOutput_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.NavOutput_Button.CustomImages.Parent = this.NavOutput_Button;
-            this.NavOutput_Button.Dock = System.Windows.Forms.DockStyle.Top;
-            this.NavOutput_Button.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavOutput_Button.ForeColor = System.Drawing.Color.White;
-            this.NavOutput_Button.HoverState.Parent = this.NavOutput_Button;
-            this.NavOutput_Button.Image = global::BUS_Manager.Properties.Resources.Report;
-            this.NavOutput_Button.ImageSize = new System.Drawing.Size(35, 35);
-            this.NavOutput_Button.Location = new System.Drawing.Point(0, 166);
-            this.NavOutput_Button.Name = "NavOutput_Button";
-            this.NavOutput_Button.ShadowDecoration.Parent = this.NavOutput_Button;
-            this.NavOutput_Button.Size = new System.Drawing.Size(298, 69);
-            this.NavOutput_Button.TabIndex = 2;
-            this.NavOutput_Button.Text = "Salida | Reporte";
-            this.NavOutput_Button.Click += new System.EventHandler(this.ViewNavFunction);
-            // 
-            // NavConfiguration_Button
-            // 
-            this.NavConfiguration_Button.CheckedState.Parent = this.NavConfiguration_Button;
-            this.NavConfiguration_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.NavConfiguration_Button.CustomImages.Parent = this.NavConfiguration_Button;
-            this.NavConfiguration_Button.Dock = System.Windows.Forms.DockStyle.Top;
-            this.NavConfiguration_Button.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavConfiguration_Button.ForeColor = System.Drawing.Color.White;
-            this.NavConfiguration_Button.HoverState.Parent = this.NavConfiguration_Button;
-            this.NavConfiguration_Button.Image = global::BUS_Manager.Properties.Resources.Config;
-            this.NavConfiguration_Button.ImageSize = new System.Drawing.Size(40, 40);
-            this.NavConfiguration_Button.Location = new System.Drawing.Point(0, 235);
-            this.NavConfiguration_Button.Name = "NavConfiguration_Button";
-            this.NavConfiguration_Button.ShadowDecoration.Parent = this.NavConfiguration_Button;
-            this.NavConfiguration_Button.Size = new System.Drawing.Size(298, 69);
-            this.NavConfiguration_Button.TabIndex = 3;
-            this.NavConfiguration_Button.Text = "Configuraciones";
-            this.NavConfiguration_Button.Click += new System.EventHandler(this.ViewNavFunction);
-            // 
-            // NavSupport_Button
-            // 
-            this.NavSupport_Button.CheckedState.Parent = this.NavSupport_Button;
-            this.NavSupport_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.NavSupport_Button.CustomImages.Parent = this.NavSupport_Button;
-            this.NavSupport_Button.Dock = System.Windows.Forms.DockStyle.Top;
-            this.NavSupport_Button.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavSupport_Button.ForeColor = System.Drawing.Color.White;
-            this.NavSupport_Button.HoverState.Parent = this.NavSupport_Button;
-            this.NavSupport_Button.Image = global::BUS_Manager.Properties.Resources.Support;
-            this.NavSupport_Button.ImageSize = new System.Drawing.Size(30, 30);
-            this.NavSupport_Button.Location = new System.Drawing.Point(0, 304);
-            this.NavSupport_Button.Name = "NavSupport_Button";
-            this.NavSupport_Button.ShadowDecoration.Parent = this.NavSupport_Button;
-            this.NavSupport_Button.Size = new System.Drawing.Size(298, 69);
-            this.NavSupport_Button.TabIndex = 4;
-            this.NavSupport_Button.Text = "Soporte Tecnico";
-            this.NavSupport_Button.Click += new System.EventHandler(this.ViewNavFunction);
-            // 
-            // NavHelp_Button
-            // 
-            this.NavHelp_Button.CheckedState.Parent = this.NavHelp_Button;
-            this.NavHelp_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.NavHelp_Button.CustomImages.Parent = this.NavHelp_Button;
-            this.NavHelp_Button.Dock = System.Windows.Forms.DockStyle.Top;
-            this.NavHelp_Button.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavHelp_Button.ForeColor = System.Drawing.Color.White;
-            this.NavHelp_Button.HoverState.Parent = this.NavHelp_Button;
-            this.NavHelp_Button.Image = global::BUS_Manager.Properties.Resources.Ayuda;
-            this.NavHelp_Button.ImageSize = new System.Drawing.Size(35, 35);
-            this.NavHelp_Button.Location = new System.Drawing.Point(0, 373);
-            this.NavHelp_Button.Name = "NavHelp_Button";
-            this.NavHelp_Button.ShadowDecoration.Parent = this.NavHelp_Button;
-            this.NavHelp_Button.Size = new System.Drawing.Size(298, 69);
-            this.NavHelp_Button.TabIndex = 5;
-            this.NavHelp_Button.Text = "Ayuda";
-            this.NavHelp_Button.Click += new System.EventHandler(this.ViewNavFunction);
-            // 
-            // Menu_Panel
-            // 
-            this.Menu_Panel.BorderColor = System.Drawing.Color.Gray;
-            this.Menu_Panel.BorderRadius = 1;
-            this.Menu_Panel.Controls.Add(this.NavHelp_Button);
-            this.Menu_Panel.Controls.Add(this.NavSupport_Button);
-            this.Menu_Panel.Controls.Add(this.NavConfiguration_Button);
-            this.Menu_Panel.Controls.Add(this.NavOutput_Button);
-            this.Menu_Panel.Controls.Add(this.NavRegister_Button);
-            this.Menu_Panel.Controls.Add(this.NavView_Button);
-            this.Menu_Panel.Controls.Add(this.TopLeft_Panel);
-            this.Menu_Panel.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.Menu_Panel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_Panel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.Menu_Panel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.Menu_Panel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
-            this.Menu_Panel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
-            this.Menu_Panel.Location = new System.Drawing.Point(0, 0);
-            this.Menu_Panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Menu_Panel.Name = "Menu_Panel";
-            this.Menu_Panel.ShadowDecoration.Parent = this.Menu_Panel;
-            this.Menu_Panel.Size = new System.Drawing.Size(298, 504);
-            this.Menu_Panel.TabIndex = 0;
+            this.DriversRegister_Button.Click += new System.EventHandler(this.DriversView_Button_Click);
             // 
             // MainForm
             // 
@@ -551,17 +557,17 @@ namespace BUS_Manager.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.Top_Panel.ResumeLayout(false);
             this.Top_Panel.PerformLayout();
+            this.Menu_Panel.ResumeLayout(false);
             this.View_Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ViewTitle_Picture)).EndInit();
             this.Register_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.RegsiterTitle_Picture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ViewTitle_Picture)).EndInit();
-            this.Menu_Panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

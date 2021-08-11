@@ -75,6 +75,42 @@
     <Compile Include="Forms\SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SubForms\RegisterDriverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForms\RegisterDriverForm.Designer.cs">
+      <DependentUpon>RegisterDriverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForms\RegisterPathForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForms\RegisterPathForm.Designer.cs">
+      <DependentUpon>RegisterPathForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForms\RegisterVehicleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForms\RegisterVehicleForm.Designer.cs">
+      <DependentUpon>RegisterVehicleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForms\ViewDriverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForms\ViewDriverForm.Designer.cs">
+      <DependentUpon>ViewDriverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForms\ViewPathForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForms\ViewPathForm.Designer.cs">
+      <DependentUpon>ViewPathForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForms\ViewVehicleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForms\ViewVehicleForm.Designer.cs">
+      <DependentUpon>ViewVehicleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Login.resx">
@@ -88,6 +124,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForms\RegisterDriverForm.resx">
+      <DependentUpon>RegisterDriverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForms\RegisterPathForm.resx">
+      <DependentUpon>RegisterPathForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForms\RegisterVehicleForm.resx">
+      <DependentUpon>RegisterVehicleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForms\ViewDriverForm.resx">
+      <DependentUpon>ViewDriverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForms\ViewPathForm.resx">
+      <DependentUpon>ViewPathForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForms\ViewVehicleForm.resx">
+      <DependentUpon>ViewVehicleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -176,7 +230,6 @@
     <None Include="Resources\Ruta.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\SubForms\" />
     <Folder Include="UserControls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

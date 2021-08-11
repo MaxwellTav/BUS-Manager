@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS_Manager.Forms.SubForms;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -102,6 +103,66 @@ namespace BUS_Manager.Forms
             //Iniciando como predeterminado y seleccionado el botón.
             NavView_Button.FillColor = Color.FromArgb(_R, _G, _B);
             #endregion
+        }
+
+        /// <summary>
+        /// Esta función controla que formulario se abrirá al cliquear.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DriversView_Button_Click(object sender, EventArgs e)
+        {
+            Guna.UI2.WinForms.Guna2GradientButton btn = (Guna.UI2.WinForms.Guna2GradientButton)sender;
+            switch (btn.Name)
+            {
+                //----------------Vistas----------------\\
+                #region Ver Conductores.
+                case "DriversView_Button":
+                    ViewDriverForm viewDriver = new ViewDriverForm();
+                    viewDriver.ShowDialog();
+                    break;
+                #endregion
+
+                #region Ver Vehiculos.
+                //Al clickar en vehiculos.
+                case "VehiclesView_Button":
+                    ViewVehicleForm viewVehicle = new ViewVehicleForm();
+                    viewVehicle.ShowDialog();
+                    break;
+                #endregion
+
+                #region Ver Rutas.
+                //Al clickar en Rutas.
+                case "PathView_Buttons":
+                    ViewPathForm viewPath = new ViewPathForm();
+                    viewPath.ShowDialog();
+                    break;
+                #endregion
+
+
+                //---------------Registros---------------\\
+                #region Registrar Conductores.
+                case "DriversRegister_Button":
+                    RegisterDriverForm registerDriver = new RegisterDriverForm();
+                    registerDriver.ShowDialog();
+                    break;
+                #endregion
+
+                #region Registrar Vehiculos.
+                case "VehicleRegister_Button":
+                    RegisterVehicleForm registerVehicle = new RegisterVehicleForm();
+                    registerVehicle.ShowDialog();
+                    break;
+                #endregion
+
+                #region Registrar Rutas.
+                case "PathRegister_Button":
+                    RegisterPathForm registerPath = new RegisterPathForm();
+                    registerPath.ShowDialog();
+                    break;
+                    #endregion
+            }
+
         }
 
         /// <summary>
@@ -210,6 +271,7 @@ namespace BUS_Manager.Forms
             //Mensaje de bienvenida
             ShowMessage("¡Está en el formulario principal!", "Bienvenido a \"BUS Manager\"\n\n¿Qué quiere hacer?\n\nSeleccione una opción para comenzar.", 1, true);
         }
+
 
         #endregion
     }

@@ -41,6 +41,7 @@ namespace BUS_Manager
             this.UseAnimAgain_Bool = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.UseAnimAgain_Label = new System.Windows.Forms.Label();
             this.LoadingTitle_Label = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // FadeIn_Timer
@@ -180,12 +181,28 @@ namespace BUS_Manager
             this.LoadingTitle_Label.Text = "Cargando...";
             this.LoadingTitle_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Enabled = false;
+            this.label1.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(808, 429);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Versión 1.0.0";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // SplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 34F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(48)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(897, 468);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.LoadingTitle_Label);
             this.Controls.Add(this.UseAnimAgain_Bool);
             this.Controls.Add(this.UseAnimAgain_Label);
@@ -221,6 +238,7 @@ namespace BUS_Manager
         private Guna.UI2.WinForms.Guna2CustomCheckBox UseAnimAgain_Bool;
         private System.Windows.Forms.Label UseAnimAgain_Label;
         private System.Windows.Forms.Label LoadingTitle_Label;
+        private System.Windows.Forms.Label label1;
     }
 }
 
