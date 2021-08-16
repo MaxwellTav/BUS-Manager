@@ -118,12 +118,6 @@ namespace BUS_Manager.Forms.SubForms
                     {
                         try
                         {
-                            #region Código Plinio
-
-
-
-                            #endregion
-
                             EraseAll();
                             ShowMessage("¡Guardado!", "¡Datos guardados con exito!", 1, true);
                         }

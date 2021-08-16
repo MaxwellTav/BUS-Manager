@@ -220,10 +220,6 @@ namespace BUS_Manager.Forms.SubForms
                 //Si acepta todo lo anterior, pues que guarde.
                 if (MForm.DialogResult == DialogResult.OK)
                 {
-                    #region Código Plinio.
-
-                    #endregion
-
                     ShowMessage("¡Exito!", "¡Datos guardados correctamente!", 1, true);
                 }
             }
