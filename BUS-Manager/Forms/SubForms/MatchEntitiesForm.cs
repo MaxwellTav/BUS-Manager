@@ -27,7 +27,7 @@ namespace BUS_Manager.Forms.SubForms
         /// <param name="_title"></param>
         /// <param name="_body"></param>
         /// <param name="_NoButtons"></param>
-        void ShowMessage(string _title, string _body, int _NoButtons, bool _sec, string BienvenidaBtn = null)
+        void ShowMessage(string _title, string _body, int _NoButtons, bool _sec)
         {
             //Creando la instancia.
             MessageForm messageForm = new MessageForm();
@@ -38,9 +38,6 @@ namespace BUS_Manager.Forms.SubForms
             messageForm.NoButtons = _NoButtons;
             messageForm.Sec = _sec;
 
-            if (BienvenidaBtn != string.Empty || BienvenidaBtn != null)
-                messageForm.Yes_Button.Text = BienvenidaBtn;
-
             //Mostrando.
             try
             { messageForm.ShowDialog(); }
@@ -49,6 +46,9 @@ namespace BUS_Manager.Forms.SubForms
             //Salida.
             MForm = messageForm;
         }
+
+        private void ThrowException(Exception error)
+        { ShowMessage("¡Error fatál: " + error.HResult + "!", "Error: " + error.Message, 1, true); }
         #endregion
 
         /// <summary>
@@ -187,7 +187,7 @@ namespace BUS_Manager.Forms.SubForms
             }
         }
         #endregion
-
+            
         /// <summary>
         /// Botón "Relacionar".
         /// </summary>
@@ -197,11 +197,25 @@ namespace BUS_Manager.Forms.SubForms
         {
             try
             {
-                ShowMessage("¿Quiere relacionar la siguiente entrada?",
-                    "Chofer: " + Driver_DataGridView.SelectedCells.ToString() + "\n" +
-                    "Vehículo: " + Vehicle_DataGridView.SelectedCells.ToString() + "\n" +
-                    "Ruta: " + Path_DataGridView.SelectedCells.ToString()
-                    , 2, false);
+                #region Obtener las celdas
+                int ChoferCell = Driver_DataGridView.CurrentCell.RowIndex;
+                int ChoferRow = Driver_DataGridView.CurrentCell.ColumnIndex;
+
+                int VehiculoCell = Vehicle_DataGridView.CurrentRow.Index;
+                int VehiculoRow = Vehicle_DataGridView.CurrentCell.ColumnIndex;
+
+                int PathCell = Path_DataGridView.CurrentRow.Index;
+                int PathColumn = Path_DataGridView.CurrentCell.ColumnIndex;
+
+
+                MessageBox.Show("Chofer " + ChoferCell + "\nVehiculo " + VehiculoCell + "\n" + "Ruta " + PathCell);
+                #endregion
+
+                //ShowMessage("¿Quiere relacionar la siguiente entrada?",
+                //    "Chofer: " + Driver_DataGridView[ChoferCell, ChoferRow].Value.ToString() + "\n" +
+                //    "Vehículo: " + Vehicle_DataGridView[VehiculoCell, VehiculoRow].Value.ToString() + "\n" +
+                //    "Ruta: " + Path_DataGridView[PathCell, PathColumn].Value.ToString()
+                //    , 2, false);
 
                 //Si acepta todo lo anterior, pues que guarde.
                 if (MForm.DialogResult == DialogResult.OK)
@@ -213,7 +227,7 @@ namespace BUS_Manager.Forms.SubForms
                     ShowMessage("¡Exito!", "¡Datos guardados correctamente!", 1, true);
                 }
             }
-            catch { }
+            catch (Exception error) { ThrowException(error); }
         }
 
         /// <summary>

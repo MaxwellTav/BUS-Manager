@@ -105,14 +105,19 @@ namespace BUS_Manager.Forms
 
         void LoginEvent(object sender, EventArgs ev)
         {
-            #region Login con variables estáticas
-            
-
-
-            #endregion
-
             #region Funcion con SQL
+            if (User_Textbox.Text == "Maxwell" && Password_Textbox.Text == "123")
+            {
+                ShowMessage("Sesión iniciada", "Ha iniciado sesión con éxito", 1, true);
+                Forms.MainForm mainForm = new MainForm();
+                mainForm.Show();
 
+                Hide();
+            }
+            else
+            {
+                ShowMessage("Credenciales incorrectas", "Usuario y/o contraseñas incorrectas", 1, true);
+            }
             #endregion
         }
 

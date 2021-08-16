@@ -30,25 +30,27 @@ namespace BUS_Manager.Forms.SubForms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Form_Drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.form_Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Top_Panel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.Title_Form = new System.Windows.Forms.Label();
+            this.Rezize_Button = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.Minimize_Button = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Exit_Button = new Guna.UI2.WinForms.Guna2CircleButton();
             this.PanelMatch = new System.Windows.Forms.Panel();
+            this.BackCreate_Button = new Guna.UI2.WinForms.Guna2Button();
             this.Help_Button = new Guna.UI2.WinForms.Guna2Button();
             this.TitlePath_Label = new System.Windows.Forms.Label();
             this.TitleVehicle_Label = new System.Windows.Forms.Label();
@@ -57,19 +59,20 @@ namespace BUS_Manager.Forms.SubForms
             this.Path_DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Vehicle_DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Driver_DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Rezize_Button = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.PanelDelete = new System.Windows.Forms.Panel();
+            this.BackDelete_Button = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.Delete_Button = new Guna.UI2.WinForms.Guna2Button();
             this.Relations_DataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.VoidUpdate = new System.Windows.Forms.Timer(this.components);
-            this.BackDelete_Button = new Guna.UI2.WinForms.Guna2Button();
-            this.BackCreate_Button = new Guna.UI2.WinForms.Guna2Button();
             this.PanelSelection = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.GoToCreate = new Guna.UI2.WinForms.Guna2TileButton();
             this.GoToDelete = new Guna.UI2.WinForms.Guna2TileButton();
+            this.GoToCreate = new Guna.UI2.WinForms.Guna2TileButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VehicleColum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PathColum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Top_Panel.SuspendLayout();
             this.PanelMatch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Path_DataGridView)).BeginInit();
@@ -123,6 +126,30 @@ namespace BUS_Manager.Forms.SubForms
             this.Title_Form.TabIndex = 0;
             this.Title_Form.Text = "Bus Manager - Vista Choferes";
             this.Title_Form.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Rezize_Button
+            // 
+            this.Rezize_Button.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Rezize_Button.Animated = true;
+            this.Rezize_Button.BackColor = System.Drawing.Color.Transparent;
+            this.Rezize_Button.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Rezize_Button.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Rezize_Button.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.Rezize_Button.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.Rezize_Button.CheckedState.Parent = this.Rezize_Button;
+            this.Rezize_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Rezize_Button.Location = new System.Drawing.Point(820, 4);
+            this.Rezize_Button.Name = "Rezize_Button";
+            this.Rezize_Button.ShadowDecoration.Parent = this.Rezize_Button;
+            this.Rezize_Button.Size = new System.Drawing.Size(35, 20);
+            this.Rezize_Button.TabIndex = 6;
+            this.Rezize_Button.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.Rezize_Button.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.Rezize_Button.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.Rezize_Button.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.Rezize_Button.UncheckedState.Parent = this.Rezize_Button;
+            this.Rezize_Button.UseTransparentBackground = true;
+            this.Rezize_Button.Click += new System.EventHandler(this.FormControl);
             // 
             // Minimize_Button
             // 
@@ -181,6 +208,29 @@ namespace BUS_Manager.Forms.SubForms
             this.PanelMatch.Name = "PanelMatch";
             this.PanelMatch.Size = new System.Drawing.Size(903, 452);
             this.PanelMatch.TabIndex = 4;
+            // 
+            // BackCreate_Button
+            // 
+            this.BackCreate_Button.Animated = true;
+            this.BackCreate_Button.AutoRoundedCorners = true;
+            this.BackCreate_Button.BorderRadius = 31;
+            this.BackCreate_Button.CheckedState.Parent = this.BackCreate_Button;
+            this.BackCreate_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackCreate_Button.CustomImages.Parent = this.BackCreate_Button;
+            this.BackCreate_Button.FillColor = System.Drawing.Color.Silver;
+            this.BackCreate_Button.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackCreate_Button.ForeColor = System.Drawing.Color.White;
+            this.BackCreate_Button.HoverState.Parent = this.BackCreate_Button;
+            this.BackCreate_Button.ImageOffset = new System.Drawing.Point(-15, 0);
+            this.BackCreate_Button.ImageSize = new System.Drawing.Size(35, 35);
+            this.BackCreate_Button.Location = new System.Drawing.Point(757, 377);
+            this.BackCreate_Button.Name = "BackCreate_Button";
+            this.BackCreate_Button.ShadowDecoration.Parent = this.BackCreate_Button;
+            this.BackCreate_Button.Size = new System.Drawing.Size(137, 65);
+            this.BackCreate_Button.TabIndex = 14;
+            this.BackCreate_Button.Text = "Atras";
+            this.BackCreate_Button.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.BackCreate_Button.Click += new System.EventHandler(this.BackCreate_Button_Click);
             // 
             // Help_Button
             // 
@@ -265,10 +315,8 @@ namespace BUS_Manager.Forms.SubForms
             // 
             // Path_DataGridView
             // 
-            this.Path_DataGridView.AllowUserToAddRows = false;
-            this.Path_DataGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.Path_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.Path_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.Path_DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -277,28 +325,29 @@ namespace BUS_Manager.Forms.SubForms
             this.Path_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Path_DataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Path_DataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Path_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Path_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.Path_DataGridView.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Path_DataGridView.DefaultCellStyle = dataGridViewCellStyle42;
+            this.Path_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PathColum});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Path_DataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.Path_DataGridView.EnableHeadersVisualStyles = false;
             this.Path_DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
             this.Path_DataGridView.Location = new System.Drawing.Point(601, 34);
             this.Path_DataGridView.Name = "Path_DataGridView";
-            this.Path_DataGridView.ReadOnly = true;
             this.Path_DataGridView.RowHeadersVisible = false;
             this.Path_DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Path_DataGridView.Size = new System.Drawing.Size(293, 336);
@@ -317,7 +366,7 @@ namespace BUS_Manager.Forms.SubForms
             this.Path_DataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.Path_DataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.Path_DataGridView.ThemeStyle.HeaderStyle.Height = 4;
-            this.Path_DataGridView.ThemeStyle.ReadOnly = true;
+            this.Path_DataGridView.ThemeStyle.ReadOnly = false;
             this.Path_DataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.Path_DataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Path_DataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -328,10 +377,8 @@ namespace BUS_Manager.Forms.SubForms
             // 
             // Vehicle_DataGridView
             // 
-            this.Vehicle_DataGridView.AllowUserToAddRows = false;
-            this.Vehicle_DataGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.Vehicle_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.Vehicle_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.Vehicle_DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -340,28 +387,29 @@ namespace BUS_Manager.Forms.SubForms
             this.Vehicle_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Vehicle_DataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Vehicle_DataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Vehicle_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Vehicle_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.Vehicle_DataGridView.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Vehicle_DataGridView.DefaultCellStyle = dataGridViewCellStyle45;
+            this.Vehicle_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.VehicleColum});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Vehicle_DataGridView.DefaultCellStyle = dataGridViewCellStyle6;
             this.Vehicle_DataGridView.EnableHeadersVisualStyles = false;
             this.Vehicle_DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
             this.Vehicle_DataGridView.Location = new System.Drawing.Point(305, 34);
             this.Vehicle_DataGridView.Name = "Vehicle_DataGridView";
-            this.Vehicle_DataGridView.ReadOnly = true;
             this.Vehicle_DataGridView.RowHeadersVisible = false;
             this.Vehicle_DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Vehicle_DataGridView.Size = new System.Drawing.Size(293, 336);
@@ -380,7 +428,7 @@ namespace BUS_Manager.Forms.SubForms
             this.Vehicle_DataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.Vehicle_DataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.Vehicle_DataGridView.ThemeStyle.HeaderStyle.Height = 4;
-            this.Vehicle_DataGridView.ThemeStyle.ReadOnly = true;
+            this.Vehicle_DataGridView.ThemeStyle.ReadOnly = false;
             this.Vehicle_DataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.Vehicle_DataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Vehicle_DataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -391,10 +439,9 @@ namespace BUS_Manager.Forms.SubForms
             // 
             // Driver_DataGridView
             // 
-            this.Driver_DataGridView.AllowUserToAddRows = false;
-            this.Driver_DataGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.Driver_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle46;
+            this.Driver_DataGridView.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.Driver_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.Driver_DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -403,28 +450,29 @@ namespace BUS_Manager.Forms.SubForms
             this.Driver_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Driver_DataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Driver_DataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Driver_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Driver_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.Driver_DataGridView.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Driver_DataGridView.DefaultCellStyle = dataGridViewCellStyle48;
+            this.Driver_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NameColumn});
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Driver_DataGridView.DefaultCellStyle = dataGridViewCellStyle9;
             this.Driver_DataGridView.EnableHeadersVisualStyles = false;
             this.Driver_DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
             this.Driver_DataGridView.Location = new System.Drawing.Point(9, 34);
             this.Driver_DataGridView.Name = "Driver_DataGridView";
-            this.Driver_DataGridView.ReadOnly = true;
             this.Driver_DataGridView.RowHeadersVisible = false;
             this.Driver_DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Driver_DataGridView.Size = new System.Drawing.Size(293, 336);
@@ -443,7 +491,7 @@ namespace BUS_Manager.Forms.SubForms
             this.Driver_DataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.Driver_DataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.Driver_DataGridView.ThemeStyle.HeaderStyle.Height = 4;
-            this.Driver_DataGridView.ThemeStyle.ReadOnly = true;
+            this.Driver_DataGridView.ThemeStyle.ReadOnly = false;
             this.Driver_DataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.Driver_DataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Driver_DataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -451,30 +499,6 @@ namespace BUS_Manager.Forms.SubForms
             this.Driver_DataGridView.ThemeStyle.RowsStyle.Height = 22;
             this.Driver_DataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
             this.Driver_DataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // Rezize_Button
-            // 
-            this.Rezize_Button.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Rezize_Button.Animated = true;
-            this.Rezize_Button.BackColor = System.Drawing.Color.Transparent;
-            this.Rezize_Button.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Rezize_Button.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Rezize_Button.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.Rezize_Button.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.Rezize_Button.CheckedState.Parent = this.Rezize_Button;
-            this.Rezize_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Rezize_Button.Location = new System.Drawing.Point(820, 4);
-            this.Rezize_Button.Name = "Rezize_Button";
-            this.Rezize_Button.ShadowDecoration.Parent = this.Rezize_Button;
-            this.Rezize_Button.Size = new System.Drawing.Size(35, 20);
-            this.Rezize_Button.TabIndex = 6;
-            this.Rezize_Button.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.Rezize_Button.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.Rezize_Button.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.Rezize_Button.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.Rezize_Button.UncheckedState.Parent = this.Rezize_Button;
-            this.Rezize_Button.UseTransparentBackground = true;
-            this.Rezize_Button.Click += new System.EventHandler(this.FormControl);
             // 
             // PanelDelete
             // 
@@ -486,6 +510,29 @@ namespace BUS_Manager.Forms.SubForms
             this.PanelDelete.Name = "PanelDelete";
             this.PanelDelete.Size = new System.Drawing.Size(903, 452);
             this.PanelDelete.TabIndex = 14;
+            // 
+            // BackDelete_Button
+            // 
+            this.BackDelete_Button.Animated = true;
+            this.BackDelete_Button.AutoRoundedCorners = true;
+            this.BackDelete_Button.BorderRadius = 31;
+            this.BackDelete_Button.CheckedState.Parent = this.BackDelete_Button;
+            this.BackDelete_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackDelete_Button.CustomImages.Parent = this.BackDelete_Button;
+            this.BackDelete_Button.FillColor = System.Drawing.Color.Silver;
+            this.BackDelete_Button.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackDelete_Button.ForeColor = System.Drawing.Color.White;
+            this.BackDelete_Button.HoverState.Parent = this.BackDelete_Button;
+            this.BackDelete_Button.ImageOffset = new System.Drawing.Point(-15, 0);
+            this.BackDelete_Button.ImageSize = new System.Drawing.Size(35, 35);
+            this.BackDelete_Button.Location = new System.Drawing.Point(757, 375);
+            this.BackDelete_Button.Name = "BackDelete_Button";
+            this.BackDelete_Button.ShadowDecoration.Parent = this.BackDelete_Button;
+            this.BackDelete_Button.Size = new System.Drawing.Size(137, 65);
+            this.BackDelete_Button.TabIndex = 13;
+            this.BackDelete_Button.Text = "Atras";
+            this.BackDelete_Button.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.BackDelete_Button.Click += new System.EventHandler(this.BackDelete_Button_Click);
             // 
             // label3
             // 
@@ -528,8 +575,8 @@ namespace BUS_Manager.Forms.SubForms
             // 
             this.Relations_DataGrid.AllowUserToAddRows = false;
             this.Relations_DataGrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.Relations_DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.Relations_DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.Relations_DataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -538,23 +585,23 @@ namespace BUS_Manager.Forms.SubForms
             this.Relations_DataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Relations_DataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Relations_DataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Relations_DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Relations_DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.Relations_DataGrid.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Relations_DataGrid.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Relations_DataGrid.DefaultCellStyle = dataGridViewCellStyle12;
             this.Relations_DataGrid.EnableHeadersVisualStyles = false;
             this.Relations_DataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
             this.Relations_DataGrid.Location = new System.Drawing.Point(9, 34);
@@ -593,52 +640,6 @@ namespace BUS_Manager.Forms.SubForms
             this.VoidUpdate.Interval = 1000;
             this.VoidUpdate.Tick += new System.EventHandler(this.VoidUpdate_Tick);
             // 
-            // BackDelete_Button
-            // 
-            this.BackDelete_Button.Animated = true;
-            this.BackDelete_Button.AutoRoundedCorners = true;
-            this.BackDelete_Button.BorderRadius = 31;
-            this.BackDelete_Button.CheckedState.Parent = this.BackDelete_Button;
-            this.BackDelete_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BackDelete_Button.CustomImages.Parent = this.BackDelete_Button;
-            this.BackDelete_Button.FillColor = System.Drawing.Color.Silver;
-            this.BackDelete_Button.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackDelete_Button.ForeColor = System.Drawing.Color.White;
-            this.BackDelete_Button.HoverState.Parent = this.BackDelete_Button;
-            this.BackDelete_Button.ImageOffset = new System.Drawing.Point(-15, 0);
-            this.BackDelete_Button.ImageSize = new System.Drawing.Size(35, 35);
-            this.BackDelete_Button.Location = new System.Drawing.Point(757, 375);
-            this.BackDelete_Button.Name = "BackDelete_Button";
-            this.BackDelete_Button.ShadowDecoration.Parent = this.BackDelete_Button;
-            this.BackDelete_Button.Size = new System.Drawing.Size(137, 65);
-            this.BackDelete_Button.TabIndex = 13;
-            this.BackDelete_Button.Text = "Atras";
-            this.BackDelete_Button.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            this.BackDelete_Button.Click += new System.EventHandler(this.BackDelete_Button_Click);
-            // 
-            // BackCreate_Button
-            // 
-            this.BackCreate_Button.Animated = true;
-            this.BackCreate_Button.AutoRoundedCorners = true;
-            this.BackCreate_Button.BorderRadius = 31;
-            this.BackCreate_Button.CheckedState.Parent = this.BackCreate_Button;
-            this.BackCreate_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BackCreate_Button.CustomImages.Parent = this.BackCreate_Button;
-            this.BackCreate_Button.FillColor = System.Drawing.Color.Silver;
-            this.BackCreate_Button.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackCreate_Button.ForeColor = System.Drawing.Color.White;
-            this.BackCreate_Button.HoverState.Parent = this.BackCreate_Button;
-            this.BackCreate_Button.ImageOffset = new System.Drawing.Point(-15, 0);
-            this.BackCreate_Button.ImageSize = new System.Drawing.Size(35, 35);
-            this.BackCreate_Button.Location = new System.Drawing.Point(757, 377);
-            this.BackCreate_Button.Name = "BackCreate_Button";
-            this.BackCreate_Button.ShadowDecoration.Parent = this.BackCreate_Button;
-            this.BackCreate_Button.Size = new System.Drawing.Size(137, 65);
-            this.BackCreate_Button.TabIndex = 14;
-            this.BackCreate_Button.Text = "Atras";
-            this.BackCreate_Button.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            this.BackCreate_Button.Click += new System.EventHandler(this.BackCreate_Button_Click);
-            // 
             // PanelSelection
             // 
             this.PanelSelection.Controls.Add(this.GoToDelete);
@@ -649,39 +650,6 @@ namespace BUS_Manager.Forms.SubForms
             this.PanelSelection.Name = "PanelSelection";
             this.PanelSelection.Size = new System.Drawing.Size(903, 452);
             this.PanelSelection.TabIndex = 15;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Ubuntu Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(113, 351);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(271, 48);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Aquí podrá crear relaciones de \r\nentidades ya creadas.";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // GoToCreate
-            // 
-            this.GoToCreate.Animated = true;
-            this.GoToCreate.BorderRadius = 10;
-            this.GoToCreate.CheckedState.Parent = this.GoToCreate;
-            this.GoToCreate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GoToCreate.CustomImages.Parent = this.GoToCreate;
-            this.GoToCreate.Font = new System.Drawing.Font("Ubuntu", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoToCreate.ForeColor = System.Drawing.Color.White;
-            this.GoToCreate.HoverState.Parent = this.GoToCreate;
-            this.GoToCreate.Image = global::BUS_Manager.Properties.Resources.New;
-            this.GoToCreate.ImageSize = new System.Drawing.Size(100, 100);
-            this.GoToCreate.Location = new System.Drawing.Point(101, 54);
-            this.GoToCreate.Name = "GoToCreate";
-            this.GoToCreate.ShadowDecoration.Parent = this.GoToCreate;
-            this.GoToCreate.Size = new System.Drawing.Size(300, 300);
-            this.GoToCreate.TabIndex = 7;
-            this.GoToCreate.Text = "Crear relación";
-            this.GoToCreate.Click += new System.EventHandler(this.GoToCreate_Click);
             // 
             // GoToDelete
             // 
@@ -703,6 +671,26 @@ namespace BUS_Manager.Forms.SubForms
             this.GoToDelete.Text = "Eliminar relación";
             this.GoToDelete.Click += new System.EventHandler(this.GoToDelete_Click);
             // 
+            // GoToCreate
+            // 
+            this.GoToCreate.Animated = true;
+            this.GoToCreate.BorderRadius = 10;
+            this.GoToCreate.CheckedState.Parent = this.GoToCreate;
+            this.GoToCreate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GoToCreate.CustomImages.Parent = this.GoToCreate;
+            this.GoToCreate.Font = new System.Drawing.Font("Ubuntu", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GoToCreate.ForeColor = System.Drawing.Color.White;
+            this.GoToCreate.HoverState.Parent = this.GoToCreate;
+            this.GoToCreate.Image = global::BUS_Manager.Properties.Resources.New;
+            this.GoToCreate.ImageSize = new System.Drawing.Size(100, 100);
+            this.GoToCreate.Location = new System.Drawing.Point(101, 54);
+            this.GoToCreate.Name = "GoToCreate";
+            this.GoToCreate.ShadowDecoration.Parent = this.GoToCreate;
+            this.GoToCreate.Size = new System.Drawing.Size(300, 300);
+            this.GoToCreate.TabIndex = 7;
+            this.GoToCreate.Text = "Crear relación";
+            this.GoToCreate.Click += new System.EventHandler(this.GoToCreate_Click);
+            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -716,6 +704,34 @@ namespace BUS_Manager.Forms.SubForms
             this.label2.Text = "Aquí podrá eliminar relaciones \r\nya creadas en \"Crear relación\".";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Ubuntu Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(113, 351);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(271, 48);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Aquí podrá crear relaciones de \r\nentidades ya creadas.";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // NameColumn
+            // 
+            this.NameColumn.HeaderText = "Chofer";
+            this.NameColumn.Name = "NameColumn";
+            // 
+            // VehicleColum
+            // 
+            this.VehicleColum.HeaderText = "";
+            this.VehicleColum.Name = "VehicleColum";
+            // 
+            // PathColum
+            // 
+            this.PathColum.HeaderText = "";
+            this.PathColum.Name = "PathColum";
+            // 
             // MatchEntitiesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -723,9 +739,9 @@ namespace BUS_Manager.Forms.SubForms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(157)))));
             this.ClientSize = new System.Drawing.Size(903, 500);
             this.Controls.Add(this.Top_Panel);
-            this.Controls.Add(this.PanelDelete);
             this.Controls.Add(this.PanelMatch);
             this.Controls.Add(this.PanelSelection);
+            this.Controls.Add(this.PanelDelete);
             this.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -779,5 +795,8 @@ namespace BUS_Manager.Forms.SubForms
         private Guna.UI2.WinForms.Guna2TileButton GoToCreate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PathColum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VehicleColum;
     }
 }

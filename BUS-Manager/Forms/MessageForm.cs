@@ -34,8 +34,8 @@ namespace BUS_Manager.Forms
             BodyMessage_Label.Text = "BodyMessage_Label error";
             TitleMessage_Label.Text = "TitleMessage_Label error";
             Yes_Button.Text = "Si";
-
             No_Button.Text = "No";
+
             AutomaticlyCloseMessage_Timer.Enabled = true;
             SecondLeft = 10;
 
